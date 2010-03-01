@@ -1,0 +1,22 @@
+//The approximate radius of the curve
+const float curve_amount;
+
+//The distance between the bottom of the curve and the top of the curve
+const float curve_width;
+
+//The full height of the tab
+const float height;
+
+//The full width of the tab (including the padding of curve_amount on each side)
+const float width;
+
+point1 = (0, 0)
+point2 = (curve_amount, 0), control1 = (0, 0), control2 = (curve_amount * 2, 0)
+point3 = (curve_amount + curve_width, height), control1 = (curve_width, height), control2 = (curve_width + curve_amount*2, height)
+point4 = (curve_width + curve_amount*2, height)
+
+point5 = (width - curve_width - curve_amount*2, height)
+point6 = (width - curve_amount - curve_width, height), control1 = (width - curve_width, height), control2 = (width - curve_width - curve_amount*2, height)
+point7 = (width - curve_amount, 0), control1 = (0, 0), control2 = (width - curve_amount * 2, 0)
+point8 = (width, 0)
+
