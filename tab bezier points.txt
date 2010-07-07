@@ -1,7 +1,7 @@
 //The approximate radius of the curve
 const float curve_amount;
 
-//The distance between the bottom of the curve and the top of the curve
+//The horizontal distance between the bottom of the curve and the top of the curve
 const float curve_width;
 
 //The full height of the tab
@@ -17,6 +17,6 @@ point4 = (curve_width + curve_amount*2, height)
 
 point5 = (width - curve_width - curve_amount*2, height)
 point6 = (width - curve_amount - curve_width, height), control1 = (width - curve_width, height), control2 = (width - curve_width - curve_amount*2, height)
-point7 = (width - curve_amount, 0), control1 = (0, 0), control2 = (width - curve_amount * 2, 0)
+point7 = (width - curve_amount, 0), control1 = (width, 0), control2 = (width - curve_amount * 2, 0)
 point8 = (width, 0)
 

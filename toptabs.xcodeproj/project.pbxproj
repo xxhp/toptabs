@@ -1,0 +1,401 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		751CA02811C186DF009036B0 /* TBAddSplitButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 751CA01111C186DF009036B0 /* TBAddSplitButton.m */; };
+		751CA02911C186DF009036B0 /* TBBlankInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 751CA01311C186DF009036B0 /* TBBlankInfoView.m */; };
+		751CA02A11C186DF009036B0 /* TBButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 751CA01511C186DF009036B0 /* TBButton.m */; };
+		751CA02B11C186DF009036B0 /* TBPopupButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 751CA01711C186DF009036B0 /* TBPopupButton.m */; };
+		751CA02C11C186DF009036B0 /* TBPreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 751CA01911C186DF009036B0 /* TBPreviewController.m */; };
+		751CA02D11C186DF009036B0 /* TBPreviewWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 751CA01B11C186DF009036B0 /* TBPreviewWindow.m */; };
+		751CA02E11C186DF009036B0 /* TBTabContentsPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = 751CA01D11C186DF009036B0 /* TBTabContentsPreviewView.m */; };
+		751CA02F11C186DF009036B0 /* TBTabItemIdentifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 751CA01F11C186DF009036B0 /* TBTabItemIdentifier.m */; };
+		751CA03011C186DF009036B0 /* TBTabItemLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 751CA02111C186DF009036B0 /* TBTabItemLayer.m */; };
+		751CA03111C186DF009036B0 /* TBTabManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 751CA02311C186DF009036B0 /* TBTabManager.m */; };
+		751CA03211C186DF009036B0 /* TTBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 751CA02511C186DF009036B0 /* TTBar.m */; };
+		751CA03311C186DF009036B0 /* TTBarLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 751CA02711C186DF009036B0 /* TTBarLayout.m */; };
+		751CA03D11C1872B009036B0 /* TBAddSplitHorizontal_Image.png in Resources */ = {isa = PBXBuildFile; fileRef = 751CA03511C1872B009036B0 /* TBAddSplitHorizontal_Image.png */; };
+		751CA03E11C1872B009036B0 /* TBAddSplitVertical_Image.png in Resources */ = {isa = PBXBuildFile; fileRef = 751CA03611C1872B009036B0 /* TBAddSplitVertical_Image.png */; };
+		751CA03F11C1872B009036B0 /* TBChevrons_Image.png in Resources */ = {isa = PBXBuildFile; fileRef = 751CA03711C1872B009036B0 /* TBChevrons_Image.png */; };
+		751CA04011C1872B009036B0 /* TBCloseButton_Image.png in Resources */ = {isa = PBXBuildFile; fileRef = 751CA03811C1872B009036B0 /* TBCloseButton_Image.png */; };
+		751CA04111C1872B009036B0 /* TBCloseButtonDirty_Image.png in Resources */ = {isa = PBXBuildFile; fileRef = 751CA03911C1872B009036B0 /* TBCloseButtonDirty_Image.png */; };
+		751CA04211C1872B009036B0 /* TBPlusButton_Image.png in Resources */ = {isa = PBXBuildFile; fileRef = 751CA03A11C1872B009036B0 /* TBPlusButton_Image.png */; };
+		751CA04311C1872B009036B0 /* TBSetSplitOrientationtHorizontal_Image.png in Resources */ = {isa = PBXBuildFile; fileRef = 751CA03B11C1872B009036B0 /* TBSetSplitOrientationtHorizontal_Image.png */; };
+		751CA04411C1872B009036B0 /* TBSetSplitOrientationtVertical_Image.png in Resources */ = {isa = PBXBuildFile; fileRef = 751CA03C11C1872B009036B0 /* TBSetSplitOrientationtVertical_Image.png */; };
+		751CA05711C1878F009036B0 /* TTDefaultController.m in Sources */ = {isa = PBXBuildFile; fileRef = 751CA05611C1878F009036B0 /* TTDefaultController.m */; };
+		751CA0B911C18D20009036B0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 751CA0B811C18D20009036B0 /* QuartzCore.framework */; };
+		75A3149B11C184E2006253AD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75A3149A11C184E2006253AD /* Cocoa.framework */; };
+		75A314A011C184E2006253AD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 75A3149E11C184E2006253AD /* InfoPlist.strings */; };
+		75A314A211C184E2006253AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A314A111C184E2006253AD /* main.m */; };
+		75A314A511C184E2006253AD /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75A314A311C184E2006253AD /* MainMenu.xib */; };
+		75A314A811C184E2006253AD /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 75A314A611C184E2006253AD /* Credits.rtf */; };
+		75A314AB11C184E2006253AD /* toptabsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A314AA11C184E2006253AD /* toptabsAppDelegate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		751CA01011C186DF009036B0 /* TBAddSplitButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBAddSplitButton.h; sourceTree = "<group>"; };
+		751CA01111C186DF009036B0 /* TBAddSplitButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBAddSplitButton.m; sourceTree = "<group>"; };
+		751CA01211C186DF009036B0 /* TBBlankInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBBlankInfoView.h; sourceTree = "<group>"; };
+		751CA01311C186DF009036B0 /* TBBlankInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBBlankInfoView.m; sourceTree = "<group>"; };
+		751CA01411C186DF009036B0 /* TBButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBButton.h; sourceTree = "<group>"; };
+		751CA01511C186DF009036B0 /* TBButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBButton.m; sourceTree = "<group>"; };
+		751CA01611C186DF009036B0 /* TBPopupButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBPopupButton.h; sourceTree = "<group>"; };
+		751CA01711C186DF009036B0 /* TBPopupButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBPopupButton.m; sourceTree = "<group>"; };
+		751CA01811C186DF009036B0 /* TBPreviewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBPreviewController.h; sourceTree = "<group>"; };
+		751CA01911C186DF009036B0 /* TBPreviewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBPreviewController.m; sourceTree = "<group>"; };
+		751CA01A11C186DF009036B0 /* TBPreviewWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBPreviewWindow.h; sourceTree = "<group>"; };
+		751CA01B11C186DF009036B0 /* TBPreviewWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBPreviewWindow.m; sourceTree = "<group>"; };
+		751CA01C11C186DF009036B0 /* TBTabContentsPreviewView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBTabContentsPreviewView.h; sourceTree = "<group>"; };
+		751CA01D11C186DF009036B0 /* TBTabContentsPreviewView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBTabContentsPreviewView.m; sourceTree = "<group>"; };
+		751CA01E11C186DF009036B0 /* TBTabItemIdentifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBTabItemIdentifier.h; sourceTree = "<group>"; };
+		751CA01F11C186DF009036B0 /* TBTabItemIdentifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBTabItemIdentifier.m; sourceTree = "<group>"; };
+		751CA02011C186DF009036B0 /* TBTabItemLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBTabItemLayer.h; sourceTree = "<group>"; };
+		751CA02111C186DF009036B0 /* TBTabItemLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBTabItemLayer.m; sourceTree = "<group>"; wrapsLines = 1; };
+		751CA02211C186DF009036B0 /* TBTabManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBTabManager.h; sourceTree = "<group>"; };
+		751CA02311C186DF009036B0 /* TBTabManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBTabManager.m; sourceTree = "<group>"; };
+		751CA02411C186DF009036B0 /* TTBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTBar.h; sourceTree = "<group>"; };
+		751CA02511C186DF009036B0 /* TTBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTBar.m; sourceTree = "<group>"; };
+		751CA02611C186DF009036B0 /* TTBarLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTBarLayout.h; sourceTree = "<group>"; };
+		751CA02711C186DF009036B0 /* TTBarLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTBarLayout.m; sourceTree = "<group>"; };
+		751CA03511C1872B009036B0 /* TBAddSplitHorizontal_Image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TBAddSplitHorizontal_Image.png; sourceTree = "<group>"; };
+		751CA03611C1872B009036B0 /* TBAddSplitVertical_Image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TBAddSplitVertical_Image.png; sourceTree = "<group>"; };
+		751CA03711C1872B009036B0 /* TBChevrons_Image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TBChevrons_Image.png; sourceTree = "<group>"; };
+		751CA03811C1872B009036B0 /* TBCloseButton_Image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TBCloseButton_Image.png; sourceTree = "<group>"; };
+		751CA03911C1872B009036B0 /* TBCloseButtonDirty_Image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TBCloseButtonDirty_Image.png; sourceTree = "<group>"; };
+		751CA03A11C1872B009036B0 /* TBPlusButton_Image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TBPlusButton_Image.png; sourceTree = "<group>"; };
+		751CA03B11C1872B009036B0 /* TBSetSplitOrientationtHorizontal_Image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TBSetSplitOrientationtHorizontal_Image.png; sourceTree = "<group>"; };
+		751CA03C11C1872B009036B0 /* TBSetSplitOrientationtVertical_Image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TBSetSplitOrientationtVertical_Image.png; sourceTree = "<group>"; };
+		751CA05211C18788009036B0 /* TTController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTController.h; sourceTree = "<group>"; };
+		751CA05511C1878F009036B0 /* TTDefaultController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTDefaultController.h; sourceTree = "<group>"; };
+		751CA05611C1878F009036B0 /* TTDefaultController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTDefaultController.m; sourceTree = "<group>"; };
+		751CA0B811C18D20009036B0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		75A3149711C184E2006253AD /* toptabs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = toptabs.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		75A3149A11C184E2006253AD /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		75A3149C11C184E2006253AD /* toptabs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "toptabs-Info.plist"; sourceTree = "<group>"; };
+		75A3149D11C184E2006253AD /* toptabs_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = toptabs_Prefix.pch; sourceTree = "<group>"; };
+		75A3149F11C184E2006253AD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		75A314A111C184E2006253AD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		75A314A411C184E2006253AD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		75A314A711C184E2006253AD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		75A314A911C184E2006253AD /* toptabsAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = toptabsAppDelegate.h; sourceTree = "<group>"; };
+		75A314AA11C184E2006253AD /* toptabsAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = toptabsAppDelegate.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		75A3149411C184E2006253AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75A3149B11C184E2006253AD /* Cocoa.framework in Frameworks */,
+				751CA0B911C18D20009036B0 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		751CA03411C1872B009036B0 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				751CA03511C1872B009036B0 /* TBAddSplitHorizontal_Image.png */,
+				751CA03611C1872B009036B0 /* TBAddSplitVertical_Image.png */,
+				751CA03711C1872B009036B0 /* TBChevrons_Image.png */,
+				751CA03811C1872B009036B0 /* TBCloseButton_Image.png */,
+				751CA03911C1872B009036B0 /* TBCloseButtonDirty_Image.png */,
+				751CA03A11C1872B009036B0 /* TBPlusButton_Image.png */,
+				751CA03B11C1872B009036B0 /* TBSetSplitOrientationtHorizontal_Image.png */,
+				751CA03C11C1872B009036B0 /* TBSetSplitOrientationtVertical_Image.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		75A3148811C184E1006253AD = {
+			isa = PBXGroup;
+			children = (
+				75A3148F11C184E2006253AD /* Classes */,
+				75A3149011C184E2006253AD /* Other Sources */,
+				75A3149111C184E2006253AD /* Resources */,
+				75A3149211C184E2006253AD /* Frameworks */,
+				75A3149811C184E2006253AD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		75A3148F11C184E2006253AD /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				751CA05511C1878F009036B0 /* TTDefaultController.h */,
+				751CA05611C1878F009036B0 /* TTDefaultController.m */,
+				751CA01011C186DF009036B0 /* TBAddSplitButton.h */,
+				751CA01111C186DF009036B0 /* TBAddSplitButton.m */,
+				751CA01211C186DF009036B0 /* TBBlankInfoView.h */,
+				751CA01311C186DF009036B0 /* TBBlankInfoView.m */,
+				751CA01411C186DF009036B0 /* TBButton.h */,
+				751CA01511C186DF009036B0 /* TBButton.m */,
+				751CA01611C186DF009036B0 /* TBPopupButton.h */,
+				751CA01711C186DF009036B0 /* TBPopupButton.m */,
+				751CA01811C186DF009036B0 /* TBPreviewController.h */,
+				751CA01911C186DF009036B0 /* TBPreviewController.m */,
+				751CA01A11C186DF009036B0 /* TBPreviewWindow.h */,
+				751CA01B11C186DF009036B0 /* TBPreviewWindow.m */,
+				751CA01C11C186DF009036B0 /* TBTabContentsPreviewView.h */,
+				751CA01D11C186DF009036B0 /* TBTabContentsPreviewView.m */,
+				751CA01E11C186DF009036B0 /* TBTabItemIdentifier.h */,
+				751CA01F11C186DF009036B0 /* TBTabItemIdentifier.m */,
+				751CA02011C186DF009036B0 /* TBTabItemLayer.h */,
+				751CA02111C186DF009036B0 /* TBTabItemLayer.m */,
+				751CA02211C186DF009036B0 /* TBTabManager.h */,
+				751CA02311C186DF009036B0 /* TBTabManager.m */,
+				751CA02411C186DF009036B0 /* TTBar.h */,
+				751CA02511C186DF009036B0 /* TTBar.m */,
+				751CA02611C186DF009036B0 /* TTBarLayout.h */,
+				751CA02711C186DF009036B0 /* TTBarLayout.m */,
+				751CA05211C18788009036B0 /* TTController.h */,
+				75A314A911C184E2006253AD /* toptabsAppDelegate.h */,
+				75A314AA11C184E2006253AD /* toptabsAppDelegate.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		75A3149011C184E2006253AD /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				75A3149D11C184E2006253AD /* toptabs_Prefix.pch */,
+				75A314A111C184E2006253AD /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		75A3149111C184E2006253AD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				751CA03411C1872B009036B0 /* Images */,
+				75A3149C11C184E2006253AD /* toptabs-Info.plist */,
+				75A3149E11C184E2006253AD /* InfoPlist.strings */,
+				75A314A311C184E2006253AD /* MainMenu.xib */,
+				75A314A611C184E2006253AD /* Credits.rtf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		75A3149211C184E2006253AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				75A3149A11C184E2006253AD /* Cocoa.framework */,
+				751CA0B811C18D20009036B0 /* QuartzCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		75A3149811C184E2006253AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				75A3149711C184E2006253AD /* toptabs.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		75A3149611C184E2006253AD /* toptabs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75A314AE11C184E2006253AD /* Build configuration list for PBXNativeTarget "toptabs" */;
+			buildPhases = (
+				75A3149311C184E2006253AD /* Sources */,
+				75A3149411C184E2006253AD /* Frameworks */,
+				75A3149511C184E2006253AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = toptabs;
+			productName = toptabs;
+			productReference = 75A3149711C184E2006253AD /* toptabs.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		75A3148A11C184E1006253AD /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 75A3148D11C184E1006253AD /* Build configuration list for PBXProject "toptabs" */;
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = 75A3148811C184E1006253AD;
+			productRefGroup = 75A3149811C184E2006253AD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				75A3149611C184E2006253AD /* toptabs */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		75A3149511C184E2006253AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75A314A011C184E2006253AD /* InfoPlist.strings in Resources */,
+				75A314A511C184E2006253AD /* MainMenu.xib in Resources */,
+				75A314A811C184E2006253AD /* Credits.rtf in Resources */,
+				751CA03D11C1872B009036B0 /* TBAddSplitHorizontal_Image.png in Resources */,
+				751CA03E11C1872B009036B0 /* TBAddSplitVertical_Image.png in Resources */,
+				751CA03F11C1872B009036B0 /* TBChevrons_Image.png in Resources */,
+				751CA04011C1872B009036B0 /* TBCloseButton_Image.png in Resources */,
+				751CA04111C1872B009036B0 /* TBCloseButtonDirty_Image.png in Resources */,
+				751CA04211C1872B009036B0 /* TBPlusButton_Image.png in Resources */,
+				751CA04311C1872B009036B0 /* TBSetSplitOrientationtHorizontal_Image.png in Resources */,
+				751CA04411C1872B009036B0 /* TBSetSplitOrientationtVertical_Image.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		75A3149311C184E2006253AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75A314A211C184E2006253AD /* main.m in Sources */,
+				75A314AB11C184E2006253AD /* toptabsAppDelegate.m in Sources */,
+				751CA02811C186DF009036B0 /* TBAddSplitButton.m in Sources */,
+				751CA02911C186DF009036B0 /* TBBlankInfoView.m in Sources */,
+				751CA02A11C186DF009036B0 /* TBButton.m in Sources */,
+				751CA02B11C186DF009036B0 /* TBPopupButton.m in Sources */,
+				751CA02C11C186DF009036B0 /* TBPreviewController.m in Sources */,
+				751CA02D11C186DF009036B0 /* TBPreviewWindow.m in Sources */,
+				751CA02E11C186DF009036B0 /* TBTabContentsPreviewView.m in Sources */,
+				751CA02F11C186DF009036B0 /* TBTabItemIdentifier.m in Sources */,
+				751CA03011C186DF009036B0 /* TBTabItemLayer.m in Sources */,
+				751CA03111C186DF009036B0 /* TBTabManager.m in Sources */,
+				751CA03211C186DF009036B0 /* TTBar.m in Sources */,
+				751CA03311C186DF009036B0 /* TTBarLayout.m in Sources */,
+				751CA05711C1878F009036B0 /* TTDefaultController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		75A3149E11C184E2006253AD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75A3149F11C184E2006253AD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		75A314A311C184E2006253AD /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75A314A411C184E2006253AD /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		75A314A611C184E2006253AD /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75A314A711C184E2006253AD /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		75A314AC11C184E2006253AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		75A314AD11C184E2006253AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+		75A314AF11C184E2006253AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = toptabs_Prefix.pch;
+				INFOPLIST_FILE = "toptabs-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = toptabs;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		75A314B011C184E2006253AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = toptabs_Prefix.pch;
+				INFOPLIST_FILE = "toptabs-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = toptabs;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		75A3148D11C184E1006253AD /* Build configuration list for PBXProject "toptabs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75A314AC11C184E2006253AD /* Debug */,
+				75A314AD11C184E2006253AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75A314AE11C184E2006253AD /* Build configuration list for PBXNativeTarget "toptabs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75A314AF11C184E2006253AD /* Debug */,
+				75A314B011C184E2006253AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 75A3148A11C184E1006253AD /* Project object */;
+}
