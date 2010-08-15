@@ -1,909 +1,0 @@
-Ttoptabs
-v7
-r0
-t297895730.188102
-cCheck dependencies
-cProcessInfoPlistFile /Users/alexgordon/toptabs/build/Debug/toptabs.app/Contents/Info.plist toptabs-Info.plist
-cProcessPCH /var/folders/qI/qIvG5JtsGO8+iazy0mbMWE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/toptabs_Prefix-enbmeidhzdeiizfvkajlpaejbgry/toptabs_Prefix.pch.pth toptabs_Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/toptabs.build/Debug/toptabs.build/Objects-normal/x86_64/main.o /Users/alexgordon/toptabs/main.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/toptabs.build/Debug/toptabs.build/Objects-normal/x86_64/toptabsAppDelegate.o /Users/alexgordon/toptabs/Classes/toptabsAppDelegate.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/toptabs.build/Debug/toptabs.build/Objects-normal/x86_64/TBAddSplitButton.o /Users/alexgordon/toptabs/Classes/TBAddSplitButton.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/toptabs.build/Debug/toptabs.build/Objects-normal/x86_64/TBBlankInfoView.o /Users/alexgordon/toptabs/Classes/TBBlankInfoView.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/toptabs.build/Debug/toptabs.build/Objects-normal/x86_64/TBButton.o /Users/alexgordon/toptabs/Classes/TBButton.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/toptabs.build/Debug/toptabs.build/Objects-normal/x86_64/TBPopupButton.o /Users/alexgordon/toptabs/Classes/TBPopupButton.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/toptabs.build/Debug/toptabs.build/Objects-normal/x86_64/TBPreviewController.o /Users/alexgordon/toptabs/Classes/TBPreviewController.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/toptabs.build/Debug/toptabs.build/Objects-normal/x86_64/TBPreviewWindow.o /Users/alexgordon/toptabs/Classes/TBPreviewWindow.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/toptabs.build/Debug/toptabs.build/Objects-normal/x86_64/TBTabContentsPreviewView.o /Users/alexgordon/toptabs/Classes/TBTabContentsPreviewView.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/toptabs.build/Debug/toptabs.build/Objects-normal/x86_64/TBTabItemIdentifier.o /Users/alexgordon/toptabs/Classes/TBTabItemIdentifier.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/toptabs.build/Debug/toptabs.build/Objects-normal/x86_64/TBTabItemLayer.o /Users/alexgordon/toptabs/Classes/TBTabItemLayer.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/toptabs.build/Debug/toptabs.build/Objects-normal/x86_64/TBTabManager.o /Users/alexgordon/toptabs/Classes/TBTabManager.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/toptabs.build/Debug/toptabs.build/Objects-normal/x86_64/TTBar.o /Users/alexgordon/toptabs/Classes/TTBar.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/toptabs.build/Debug/toptabs.build/Objects-normal/x86_64/TTBarLayout.o /Users/alexgordon/toptabs/Classes/TTBarLayout.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCopyStringsFile /Users/alexgordon/toptabs/build/Debug/toptabs.app/Contents/Resources/en.lproj/InfoPlist.strings en.lproj/InfoPlist.strings
-cCompileXIB /Users/alexgordon/toptabs/en.lproj/MainMenu.xib
-cCpResource build/Debug/toptabs.app/Contents/Resources/en.lproj/Credits.rtf en.lproj/Credits.rtf
-cCpResource build/Debug/toptabs.app/Contents/Resources/TBAddSplitHorizontal_Image.png Images/TBAddSplitHorizontal_Image.png
-cCpResource build/Debug/toptabs.app/Contents/Resources/TBAddSplitVertical_Image.png Images/TBAddSplitVertical_Image.png
-cCpResource build/Debug/toptabs.app/Contents/Resources/TBChevrons_Image.png Images/TBChevrons_Image.png
-cCpResource build/Debug/toptabs.app/Contents/Resources/TBCloseButton_Image.png Images/TBCloseButton_Image.png
-cCpResource build/Debug/toptabs.app/Contents/Resources/TBCloseButtonDirty_Image.png Images/TBCloseButtonDirty_Image.png
-cCpResource build/Debug/toptabs.app/Contents/Resources/TBPlusButton_Image.png Images/TBPlusButton_Image.png
-cCpResource build/Debug/toptabs.app/Contents/Resources/TBSetSplitOrientationtHorizontal_Image.png Images/TBSetSplitOrientationtHorizontal_Image.png
-cCpResource build/Debug/toptabs.app/Contents/Resources/TBSetSplitOrientationtVertical_Image.png Images/TBSetSplitOrientationtVertical_Image.png
-
-N/Developer/SDKs/MacOSX10.6.sdk
-c000000004BFC07E600000000000000EE
-t1274808294
-s238
-
-N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Cocoa.framework/Cocoa
-c000000004B99A2330000000000003430
-t1268359731
-s13360
-
-N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h
-c0000000040C4AA6800000000000001E5
-t1086630504
-s485
-
-N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.h
-c000000004B68FE5B00000000000000BF
-t1265172059
-s191
-
-N/Users/alexgordon/toptabs/Classes/TBAddSplitButton.h
-c000000004A578B7F000000000000018B
-t1247251327
-s395
-i<Cocoa/Cocoa.h>
-i"TBButton.h"
-
-N/Users/alexgordon/toptabs/Classes/TBAddSplitButton.m
-c000000004B01EE1D0000000000000783
-t1258417693
-s1923
-i"TBAddSplitButton.h"
-
-N/Users/alexgordon/toptabs/Classes/TBBlankInfoView.h
-c000000004A56724C00000000000000EB
-t1247179340
-s235
-i<Cocoa/Cocoa.h>
-
-N/Users/alexgordon/toptabs/Classes/TBBlankInfoView.m
-c000000004B01EF010000000000000A9E
-t1258417921
-s2718
-i"TBBlankInfoView.h"
-
-N/Users/alexgordon/toptabs/Classes/TBButton.h
-c000000004A56724C000000000000012B
-t1247179340
-s299
-i<Cocoa/Cocoa.h>
-
-N/Users/alexgordon/toptabs/Classes/TBButton.m
-c000000004C114FB00000000000001072
-t1276202928
-s4210
-i"TBButton.h"
-i"TTBar.h"
-
-N/Users/alexgordon/toptabs/Classes/TBPopupButton.h
-c000000004A56724C0000000000000140
-t1247179340
-s320
-i<Cocoa/Cocoa.h>
-
-N/Users/alexgordon/toptabs/Classes/TBPopupButton.m
-c000000004C114FB0000000000000066B
-t1276202928
-s1643
-i"TBPopupButton.h"
-
-N/Users/alexgordon/toptabs/Classes/TBPreviewController.h
-c000000004A56724C000000000000028E
-t1247179340
-s654
-i<Cocoa/Cocoa.h>
-
-N/Users/alexgordon/toptabs/Classes/TBPreviewController.m
-c000000004B10762F0000000000001162
-t1259370031
-s4450
-i"TBPreviewController.h"
-i"TBTabContentsPreviewView.h"
-i"TBPreviewWindow.h"
-i"CHTabController.h"
-i"TBTabItemLayer.h"
-
-N/Users/alexgordon/toptabs/Classes/TBPreviewWindow.h
-c000000004A56724C00000000000000D6
-t1247179340
-s214
-i<Cocoa/Cocoa.h>
-
-N/Users/alexgordon/toptabs/Classes/TBPreviewWindow.m
-c000000004A56724C0000000000000306
-t1247179340
-s774
-i"TBPreviewWindow.h"
-
-N/Users/alexgordon/toptabs/Classes/TBTabContentsPreviewView.h
-c000000004A56724C00000000000001AC
-t1247179340
-s428
-i<Cocoa/Cocoa.h>
-
-N/Users/alexgordon/toptabs/Classes/TBTabContentsPreviewView.m
-c000000004B01EF010000000000001456
-t1258417921
-s5206
-i"TBTabContentsPreviewView.h"
-
-N/Users/alexgordon/toptabs/Classes/TBTabItemIdentifier.h
-c000000004C114FB00000000000000326
-t1276202928
-s806
-i<Cocoa/Cocoa.h>
-
-N/Users/alexgordon/toptabs/Classes/TBTabItemIdentifier.m
-c000000004C114FB00000000000000896
-t1276202928
-s2198
-i"TBTabItemIdentifier.h"
-i"TBTabItemLayer.h"
-i"TTBar.h"
-i"TBPreviewController.h"
-i"TBBlankInfoView.h"
-
-N/Users/alexgordon/toptabs/Classes/TBTabItemLayer.h
-c000000004C114FB000000000000002CF
-t1276202928
-s719
-i<Cocoa/Cocoa.h>
-i<QuartzCore/QuartzCore.h>
-
-N/Users/alexgordon/toptabs/Classes/TBTabItemLayer.m
-c000000004C114FB00000000000003AF0
-t1276202928
-s15088
-i"TBTabItemLayer.h"
-i"CHTabController.h"
-i"TTBar.h"
-i"TBPreviewController.h"
-i"TBBlankInfoView.h"
-
-N/Users/alexgordon/toptabs/Classes/TBTabManager.h
-c000000004C114FB00000000000000383
-t1276202928
-s899
-i<Cocoa/Cocoa.h>
-
-N/Users/alexgordon/toptabs/Classes/TBTabManager.m
-c000000004C114FB00000000000000C6C
-t1276202928
-s3180
-i"TBTabManager.h"
-i"CHTabController.h"
-i"TTBar.h"
-
-N/Users/alexgordon/toptabs/Classes/TBView.h
-c000000004A5ADA260000000000000442
-t1247468070
-s1090
-i<Cocoa/Cocoa.h>
-
-N/Users/alexgordon/toptabs/Classes/TBView.m
-c000000004B144D3500000000000051F0
-t1259621685
-s20976
-i"TBView.h"
-i"CHTabController.h"
-i"TBTabItemLayer.h"
-i"TBViewLayout.h"
-i"TBPreviewController.h"
-i"TBBlankInfoView.h"
-i"CHApplicationController.h"
-
-N/Users/alexgordon/toptabs/Classes/TBViewLayout.h
-c000000004A56724C00000000000000F2
-t1247179340
-s242
-i<Cocoa/Cocoa.h>
-i<QuartzCore/QuartzCore.h>
-
-N/Users/alexgordon/toptabs/Classes/TBViewLayout.m
-c000000004A56724C00000000000000E1
-t1247179340
-s225
-i"TBViewLayout.h"
-i"TBTabItemLayer.h"
-
-N/Users/alexgordon/toptabs/Classes/TTBar.h
-c000000004C114FB0000000000000043F
-t1276202928
-s1087
-i<Cocoa/Cocoa.h>
-
-N/Users/alexgordon/toptabs/Classes/TTBar.m
-c000000004C114FB000000000000051EC
-t1276202928
-s20972
-i"TTBar.h"
-i"CHTabController.h"
-i"TBTabItemLayer.h"
-i"TTBarLayout.h"
-i"TBPreviewController.h"
-i"TBBlankInfoView.h"
-i"CHApplicationController.h"
-
-N/Users/alexgordon/toptabs/Classes/TTBarLayout.h
-c000000004C114FB000000000000000F0
-t1276202928
-s240
-i<Cocoa/Cocoa.h>
-i<QuartzCore/QuartzCore.h>
-
-N/Users/alexgordon/toptabs/Classes/TTBarLayout.m
-c000000004C114FB000000000000000DE
-t1276202928
-s222
-i"TTBarLayout.h"
-i"TBTabItemLayer.h"
-
-N/Users/alexgordon/toptabs/Classes/toptabsAppDelegate.h
-c000000004C114F040000000000000160
-t1276202756
-s352
-
-N/Users/alexgordon/toptabs/Classes/toptabsAppDelegate.m
-c000000004C114D620000000000000177
-t1276202338
-s375
-i"toptabsAppDelegate.h"
-
-N/Users/alexgordon/toptabs/Images/TBAddSplitHorizontal_Image.png
-c000000004A573CB00000000000000F63
-t1247231152
-s3939
-
-N/Users/alexgordon/toptabs/Images/TBAddSplitVertical_Image.png
-c000000004A573CB00000000000000F56
-t1247231152
-s3926
-
-N/Users/alexgordon/toptabs/Images/TBChevrons_Image.png
-c000000004A56724C0000000000001086
-t1247179340
-s4230
-
-N/Users/alexgordon/toptabs/Images/TBCloseButtonDirty_Image.png
-c000000004A573CB00000000000000FEC
-t1247231152
-s4076
-
-N/Users/alexgordon/toptabs/Images/TBCloseButton_Image.png
-c000000004A5687CC000000000000101A
-t1247184844
-s4122
-
-N/Users/alexgordon/toptabs/Images/TBPlusButton_Image.png
-c000000004A56724C0000000000000F4E
-t1247179340
-s3918
-
-N/Users/alexgordon/toptabs/Images/TBSetSplitOrientationtHorizontal_Image.png
-c000000004A5ADA260000000000000F24
-t1247468070
-s3876
-
-N/Users/alexgordon/toptabs/Images/TBSetSplitOrientationtVertical_Image.png
-c000000004A5ADA260000000000000F2C
-t1247468070
-s3884
-
-N/Users/alexgordon/toptabs/build/Debug/toptabs.app
-t2
-s0
-
-N/Users/alexgordon/toptabs/build/Debug/toptabs.app/Contents/Info.plist
-t1276202928
-s886
-
-N/Users/alexgordon/toptabs/build/Debug/toptabs.app/Contents/MacOS/toptabs
-t2
-s0
-
-N/Users/alexgordon/toptabs/build/Debug/toptabs.app/Contents/PkgInfo
-t1276202928
-s8
-
-N/Users/alexgordon/toptabs/build/Debug/toptabs.app/Contents/Resources/TBAddSplitHorizontal_Image.png
-t1276202930
-s3939
-
-N/Users/alexgordon/toptabs/build/Debug/toptabs.app/Contents/Resources/TBAddSplitVertical_Image.png
-t1276202930
-s3926
-
-N/Users/alexgordon/toptabs/build/Debug/toptabs.app/Contents/Resources/TBChevrons_Image.png
-t1276202930
-s4230
-
-N/Users/alexgordon/toptabs/build/Debug/toptabs.app/Contents/Resources/TBCloseButtonDirty_Image.png
-t1276202930
-s4076
-
-N/Users/alexgordon/toptabs/build/Debug/toptabs.app/Contents/Resources/TBCloseButton_Image.png
-t1276202930
-s4122
-
-N/Users/alexgordon/toptabs/build/Debug/toptabs.app/Contents/Resources/TBPlusButton_Image.png
-t1276202930
-s3918
-
-N/Users/alexgordon/toptabs/build/Debug/toptabs.app/Contents/Resources/TBSetSplitOrientationtHorizontal_Image.png
-t1276202930
-s3876
-
-N/Users/alexgordon/toptabs/build/Debug/toptabs.app/Contents/Resources/TBSetSplitOrientationtVertical_Image.png
-t1276202930
-s3884
-
-N/Users/alexgordon/toptabs/build/Debug/toptabs.app/Contents/Resources/en.lproj/Credits.rtf
-t1276202930
-s436
-
-N/Users/alexgordon/toptabs/build/Debug/toptabs.app/Contents/Resources/en.lproj/InfoPlist.strings
-t1276202930
-s204
-
-N/Users/alexgordon/toptabs/build/Debug/toptabs.app/Contents/Resources/en.lproj/MainMenu.nib
-t1276202930
-s35842
-
-N/Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/Objects-normal/x86_64/TBAddSplitButton.o
-t1276202929
-s23000
-
-N/Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/Objects-normal/x86_64/TBBlankInfoView.o
-t1276202929
-s25136
-
-N/Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/Objects-normal/x86_64/TBButton.o
-t1276202929
-s34076
-
-N/Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/Objects-normal/x86_64/TBPopupButton.o
-t1276202929
-s26584
-
-N/Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/Objects-normal/x86_64/TBPreviewController.o
-t2
-s0
-
-N/Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/Objects-normal/x86_64/TBPreviewWindow.o
-t1276202929
-s12240
-
-N/Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/Objects-normal/x86_64/TBTabContentsPreviewView.o
-t1276202929
-s42620
-
-N/Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/Objects-normal/x86_64/TBTabItemIdentifier.o
-t1276202929
-s32960
-
-N/Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/Objects-normal/x86_64/TBTabItemLayer.o
-t2
-s0
-
-N/Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/Objects-normal/x86_64/TBTabManager.o
-t2
-s0
-
-N/Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/Objects-normal/x86_64/TBView.o
-t2
-s0
-
-N/Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/Objects-normal/x86_64/TBViewLayout.o
-t2
-s0
-
-N/Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/Objects-normal/x86_64/TTBar.o
-t2
-s0
-
-N/Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/Objects-normal/x86_64/TTBarLayout.o
-t1276202929
-s1424
-
-N/Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/Objects-normal/x86_64/main.o
-t1276202929
-s2200
-
-N/Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/Objects-normal/x86_64/toptabs.LinkFileList
-c000000004C114FB000000000000005BB
-t1276202928
-s1467
-
-N/Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/Objects-normal/x86_64/toptabsAppDelegate.o
-t2
-s0
-
-N/Users/alexgordon/toptabs/en.lproj/Credits.rtf
-c000000004C114D6200000000000001B4
-t1276202338
-s436
-
-N/Users/alexgordon/toptabs/en.lproj/InfoPlist.strings
-c000000004C114D620000000000000066
-t1276202338
-s102
-
-N/Users/alexgordon/toptabs/en.lproj/MainMenu.xib
-c000000004C114ED900000000000275A7
-t1276202713
-s161191
-
-N/Users/alexgordon/toptabs/main.m
-c000000004C114D620000000000000103
-t1276202338
-s259
-i<Cocoa/Cocoa.h>
-
-N/Users/alexgordon/toptabs/toptabs_Prefix.pch
-c000000004C114D620000000000000092
-t1276202338
-s146
-i<Cocoa/Cocoa.h>
-
-N/var/folders/qI/qIvG5JtsGO8+iazy0mbMWE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/toptabs_Prefix-enbmeidhzdeiizfvkajlpaejbgry/toptabs_Prefix.pch.pth
-t1276202929
-s7480840
-
-Ntoptabs-Info.plist
-c000000004C114D6200000000000005B5
-t1276202338
-s1461
-
-CCheck dependencies
-r0
-lSLF07#2@18"Check dependencies297895728#297895728#0(0"0(0#1#0"7947009927035180032#0"0#
-
-CCompileC build/toptabs.build/Debug/toptabs.build/Objects-normal/x86_64/TBAddSplitButton.o /Users/alexgordon/toptabs/Classes/TBAddSplitButton.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s297895729.316208
-e297895729.403452
-r1
-xCompileC
-xbuild/toptabs.build/Debug/toptabs.build/Objects-normal/x86_64/TBAddSplitButton.o
-x/Users/alexgordon/toptabs/Classes/TBAddSplitButton.m
-xnormal
-xx86_64
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-o/Users/alexgordon/toptabs/Classes/TBAddSplitButton.m:39:2:{39:2-39:20}: warning: method '-updateImage' not found (return type defaults to 'id')
-o         [self updateImage];
-o         ^~~~~~~~~~~~~~~~~~
-o/Users/alexgordon/toptabs/Classes/TBAddSplitButton.m:48:2:{48:2-48:20}: warning: method '-updateImage' not found (return type defaults to 'id')
-o         [self updateImage];
-o         ^~~~~~~~~~~~~~~~~~
-o2 diagnostics generated.
-lSLF07#2@60"Compile /Users/alexgordon/toptabs/Classes/TBAddSplitButton.m297895729#297895729#0(402"/Users/alexgordon/toptabs/Classes/TBAddSplitButton.m:39:2:{39:2-39:20}: warning: method '-updateImage' not found (return type defaults to 'id')         [self updateImage];         ^~~~~~~~~~~~~~~~~~/Users/alexgordon/toptabs/Classes/TBAddSplitButton.m:48:2:{48:2-48:20}: warning: method '-updateImage' not found (return type defaults to 'id')         [self updateImage];         ^~~~~~~~~~~~~~~~~~2(22@62"Method '-updateImage' not found (return type defaults to 'id')297895729#0#144#0(6@52"/Users/alexgordon/toptabs/Classes/TBAddSplitButton.m280110493#39#2#0#0#49"method * not found (return type defaults to 'id')1(6@52"/Users/alexgordon/toptabs/Classes/TBAddSplitButton.m280110493#39#2#39#20#22@62"Method '-updateImage' not found (return type defaults to 'id')297895729#201#144#0(6@52"/Users/alexgordon/toptabs/Classes/TBAddSplitButton.m280110493#48#2#0#0#49"method * not found (return type defaults to 'id')1(6@52"/Users/alexgordon/toptabs/Classes/TBAddSplitButton.m280110493#48#2#48#20#0#0#52"/Users/alexgordon/toptabs/Classes/TBAddSplitButton.m4300911832#1384"    cd /Users/alexgordon/toptabs    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -iquote /Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/toptabs-generated-files.hmap -I/Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/toptabs-own-target-headers.hmap -I/Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/toptabs-all-target-headers.hmap -iquote /Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/toptabs-project-headers.hmap -F/Users/alexgordon/toptabs/build/Debug -I/Users/alexgordon/toptabs/build/Debug/include -I/Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/DerivedSources/x86_64 -I/Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/DerivedSources -include /var/folders/qI/qIvG5JtsGO8+iazy0mbMWE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/toptabs_Prefix-enbmeidhzdeiizfvkajlpaejbgry/toptabs_Prefix.pch -c /Users/alexgordon/toptabs/Classes/TBAddSplitButton.m -o /Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/Objects-normal/x86_64/TBAddSplitButton.o0#
-
-CCompileC build/toptabs.build/Debug/toptabs.build/Objects-normal/x86_64/TBBlankInfoView.o /Users/alexgordon/toptabs/Classes/TBBlankInfoView.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s297895729.363923
-e297895729.463765
-r1
-xCompileC
-xbuild/toptabs.build/Debug/toptabs.build/Objects-normal/x86_64/TBBlankInfoView.o
-x/Users/alexgordon/toptabs/Classes/TBBlankInfoView.m
-xnormal
-xx86_64
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-o/Users/alexgordon/toptabs/Classes/TBBlankInfoView.m:24:13: warning: NSWindow  may not respond to 'document'
-o         delegate = [[self window] document];
-o                    ^
-o1 diagnostic generated.
-lSLF07#2@59"Compile /Users/alexgordon/toptabs/Classes/TBBlankInfoView.m297895729#297895729#0(176"/Users/alexgordon/toptabs/Classes/TBBlankInfoView.m:24:13: warning: NSWindow  may not respond to 'document'         delegate = [[self window] document];                    ^1(22@39"NSWindow  may not respond to 'document'297895729#0#108#0(6@51"/Users/alexgordon/toptabs/Classes/TBBlankInfoView.m280110721#24#13#0#0#23"*  may not respond to *0(0#0#51"/Users/alexgordon/toptabs/Classes/TBBlankInfoView.m4300911832#1382"    cd /Users/alexgordon/toptabs    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -iquote /Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/toptabs-generated-files.hmap -I/Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/toptabs-own-target-headers.hmap -I/Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/toptabs-all-target-headers.hmap -iquote /Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/toptabs-project-headers.hmap -F/Users/alexgordon/toptabs/build/Debug -I/Users/alexgordon/toptabs/build/Debug/include -I/Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/DerivedSources/x86_64 -I/Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/DerivedSources -include /var/folders/qI/qIvG5JtsGO8+iazy0mbMWE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/toptabs_Prefix-enbmeidhzdeiizfvkajlpaejbgry/toptabs_Prefix.pch -c /Users/alexgordon/toptabs/Classes/TBBlankInfoView.m -o /Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/Objects-normal/x86_64/TBBlankInfoView.o0#
-
-CCompileC build/toptabs.build/Debug/toptabs.build/Objects-normal/x86_64/TBButton.o /Users/alexgordon/toptabs/Classes/TBButton.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s297895729.403582
-e297895729.512023
-r1
-xCompileC
-xbuild/toptabs.build/Debug/toptabs.build/Objects-normal/x86_64/TBButton.o
-x/Users/alexgordon/toptabs/Classes/TBButton.m
-xnormal
-xx86_64
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-o/Users/alexgordon/toptabs/Classes/TBButton.m:61:2:{61:2-61:52}: warning: method '-drawMainRect:obj:' not found (return type defaults to 'id')
-o         [[self class] drawMainRect:[self bounds] obj:self];
-o         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-o/Users/alexgordon/toptabs/Classes/TBButton.m:71:7:{71:7-71:26}: warning: method '-mouseState' not found (return type defaults to 'id')
-o                 if ([object mouseState] == 1)
-o                     ^~~~~~~~~~~~~~~~~~~
-o/Users/alexgordon/toptabs/Classes/TBButton.m:71:27:{71:7-71:26}{71:30-71:31}: warning: comparison between pointer and integer ('id' and 'int')
-o                 if ([object mouseState] == 1)
-o                     ~~~~~~~~~~~~~~~~~~~ ^  ~
-o/Users/alexgordon/toptabs/Classes/TBButton.m:76:12:{76:12-76:31}: warning: method '-mouseState' not found (return type defaults to 'id')
-o                 else if ([object mouseState] == -1)
-o                          ^~~~~~~~~~~~~~~~~~~
-o/Users/alexgordon/toptabs/Classes/TBButton.m:76:32:{76:12-76:31}{76:35-76:37}: warning: comparison between pointer and integer ('id' and 'int')
-o                 else if ([object mouseState] == -1)
-o                          ~~~~~~~~~~~~~~~~~~~ ^  ~~
-o5 diagnostics generated.
-lSLF07#2@52"Compile /Users/alexgordon/toptabs/Classes/TBButton.m297895729#297895729#0(1207"/Users/alexgordon/toptabs/Classes/TBButton.m:61:2:{61:2-61:52}: warning: method '-drawMainRect:obj:' not found (return type defaults to 'id')         [[self class] drawMainRect:[self bounds] obj:self];         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~/Users/alexgordon/toptabs/Classes/TBButton.m:71:7:{71:7-71:26}: warning: method '-mouseState' not found (return type defaults to 'id')                 if ([object mouseState] == 1)                     ^~~~~~~~~~~~~~~~~~~/Users/alexgordon/toptabs/Classes/TBButton.m:71:27:{71:7-71:26}{71:30-71:31}: warning: comparison between pointer and integer ('id' and 'int')                 if ([object mouseState] == 1)                     ~~~~~~~~~~~~~~~~~~~ ^  ~/Users/alexgordon/toptabs/Classes/TBButton.m:76:12:{76:12-76:31}: warning: method '-mouseState' not found (return type defaults to 'id')                 else if ([object mouseState] == -1)                          ^~~~~~~~~~~~~~~~~~~/Users/alexgordon/toptabs/Classes/TBButton.m:76:32:{76:12-76:31}{76:35-76:37}: warning: comparison between pointer and integer ('id' and 'int')                 else if ([object mouseState] == -1)                          ~~~~~~~~~~~~~~~~~~~ ^  ~~5(22@68"Method '-drawMainRect:obj:' not found (return type defaults to 'id')297895729#0#142#0(6@44"/Users/alexgordon/toptabs/Classes/TBButton.m297895728#61#2#0#0#49"method * not found (return type defaults to 'id')1(6@44"/Users/alexgordon/toptabs/Classes/TBButton.m297895728#61#2#61#52#22@61"Method '-mouseState' not found (return type defaults to 'id')297895729#263#135#0(6@44"/Users/alexgordon/toptabs/Classes/TBButton.m297895728#71#7#0#0#49"method * not found (return type defaults to 'id')1(6@44"/Users/alexgordon/toptabs/Classes/TBButton.m297895728#71#7#71#26#22@55"Comparison between pointer and integer ('id' and 'int')297895729#486#143#0(6@44"/Users/alexgordon/toptabs/Classes/TBButton.m297895728#71#27#0#0#48"comparison between pointer and integer (* and *)2(6@44"/Users/alexgordon/toptabs/Classes/TBButton.m297895728#71#7#71#26#6@44"/Users/alexgordon/toptabs/Classes/TBButton.m297895728#71#30#71#31#22@61"Method '-mouseState' not found (return type defaults to 'id')297895729#722#137#0(6@44"/Users/alexgordon/toptabs/Classes/TBButton.m297895728#76#12#0#0#49"method * not found (return type defaults to 'id')1(6@44"/Users/alexgordon/toptabs/Classes/TBButton.m297895728#76#12#76#31#22@55"Comparison between pointer and integer ('id' and 'int')297895729#958#144#0(6@44"/Users/alexgordon/toptabs/Classes/TBButton.m297895728#76#32#0#0#48"comparison between pointer and integer (* and *)2(6@44"/Users/alexgordon/toptabs/Classes/TBButton.m297895728#76#12#76#31#6@44"/Users/alexgordon/toptabs/Classes/TBButton.m297895728#76#35#76#37#0#0#44"/Users/alexgordon/toptabs/Classes/TBButton.m4300911832#1368"    cd /Users/alexgordon/toptabs    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -iquote /Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/toptabs-generated-files.hmap -I/Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/toptabs-own-target-headers.hmap -I/Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/toptabs-all-target-headers.hmap -iquote /Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/toptabs-project-headers.hmap -F/Users/alexgordon/toptabs/build/Debug -I/Users/alexgordon/toptabs/build/Debug/include -I/Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/DerivedSources/x86_64 -I/Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/DerivedSources -include /var/folders/qI/qIvG5JtsGO8+iazy0mbMWE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/toptabs_Prefix-enbmeidhzdeiizfvkajlpaejbgry/toptabs_Prefix.pch -c /Users/alexgordon/toptabs/Classes/TBButton.m -o /Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/Objects-normal/x86_64/TBButton.o0#
-
-CCompileC build/toptabs.build/Debug/toptabs.build/Objects-normal/x86_64/TBPopupButton.o /Users/alexgordon/toptabs/Classes/TBPopupButton.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s297895729.463865
-e297895729.544193
-r1
-xCompileC
-xbuild/toptabs.build/Debug/toptabs.build/Objects-normal/x86_64/TBPopupButton.o
-x/Users/alexgordon/toptabs/Classes/TBPopupButton.m
-xnormal
-xx86_64
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-o/Users/alexgordon/toptabs/Classes/TBPopupButton.m:27:24: warning: local declaration of 'ta' hides instance variable
-o         [self addTrackingArea:ta];
-o                               ^
-o/Users/alexgordon/toptabs/Classes/TBPopupButton.m:33:3: warning: receiver 'TTBar' is a forward class and corresponding @interface may not exist
-o                 [TTBar drawBackgroundInRect:[self bounds] flipped:NO light:![[self window] isMainWindow] hover:NO];
-o                 ^
-o/Users/alexgordon/toptabs/Classes/TBPopupButton.m:33:3:{33:3-33:101}: warning: method '+drawBackgroundInRect:flipped:light:hover:' not found (return type defaults to 'id')
-o                 [TTBar drawBackgroundInRect:[self bounds] flipped:NO light:![[self window] isMainWindow] hover:NO];
-o                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-o/Users/alexgordon/toptabs/Classes/TBPopupButton.m:35:3: warning: receiver 'TBButton' is a forward class and corresponding @interface may not exist
-o                 [TBButton drawMainRect:[self bounds] obj:self];
-o                 ^
-o/Users/alexgordon/toptabs/Classes/TBPopupButton.m:35:3:{35:3-35:49}: warning: method '+drawMainRect:obj:' not found (return type defaults to 'id')
-o                 [TBButton drawMainRect:[self bounds] obj:self];
-o                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-o5 diagnostics generated.
-lSLF07#2@57"Compile /Users/alexgordon/toptabs/Classes/TBPopupButton.m297895729#297895729#0(1377"/Users/alexgordon/toptabs/Classes/TBPopupButton.m:27:24: warning: local declaration of 'ta' hides instance variable         [self addTrackingArea:ta];                               ^/Users/alexgordon/toptabs/Classes/TBPopupButton.m:33:3: warning: receiver 'TTBar' is a forward class and corresponding @interface may not exist                 [TTBar drawBackgroundInRect:[self bounds] flipped:NO light:![[self window] isMainWindow] hover:NO];                 ^/Users/alexgordon/toptabs/Classes/TBPopupButton.m:33:3:{33:3-33:101}: warning: method '+drawBackgroundInRect:flipped:light:hover:' not found (return type defaults to 'id')                 [TTBar drawBackgroundInRect:[self bounds] flipped:NO light:![[self window] isMainWindow] hover:NO];                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~/Users/alexgordon/toptabs/Classes/TBPopupButton.m:35:3: warning: receiver 'TBButton' is a forward class and corresponding @interface may not exist                 [TBButton drawMainRect:[self bounds] obj:self];                 ^/Users/alexgordon/toptabs/Classes/TBPopupButton.m:35:3:{35:3-35:49}: warning: method '+drawMainRect:obj:' not found (return type defaults to 'id')                 [TBButton drawMainRect:[self bounds] obj:self];                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~5(22@49"Local declaration of 'ta' hides instance variable297895729#0#116#0(6@49"/Users/alexgordon/toptabs/Classes/TBPopupButton.m297895728#27#24#0#0#46"local declaration of * hides instance variable0(22@78"Receiver 'TTBar' is a forward class and corresponding @interface may not exist297895729#185#144#0(6@49"/Users/alexgordon/toptabs/Classes/TBPopupButton.m297895728#33#3#0#0#0"0(22@92"Method '+drawBackgroundInRect:flipped:light:hover:' not found (return type defaults to 'id')297895729#465#172#0(6@49"/Users/alexgordon/toptabs/Classes/TBPopupButton.m297895728#33#3#0#0#49"method * not found (return type defaults to 'id')1(6@49"/Users/alexgordon/toptabs/Classes/TBPopupButton.m297895728#33#3#33#101#22@81"Receiver 'TBButton' is a forward class and corresponding @interface may not exist297895729#870#147#0(6@49"/Users/alexgordon/toptabs/Classes/TBPopupButton.m297895728#35#3#0#0#0"0(22@68"Method '+drawMainRect:obj:' not found (return type defaults to 'id')297895729#1101#147#0(6@49"/Users/alexgordon/toptabs/Classes/TBPopupButton.m297895728#35#3#0#0#49"method * not found (return type defaults to 'id')1(6@49"/Users/alexgordon/toptabs/Classes/TBPopupButton.m297895728#35#3#35#49#0#0#49"/Users/alexgordon/toptabs/Classes/TBPopupButton.m4300911832#1378"    cd /Users/alexgordon/toptabs    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -iquote /Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/toptabs-generated-files.hmap -I/Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/toptabs-own-target-headers.hmap -I/Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/toptabs-all-target-headers.hmap -iquote /Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/toptabs-project-headers.hmap -F/Users/alexgordon/toptabs/build/Debug -I/Users/alexgordon/toptabs/build/Debug/include -I/Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/DerivedSources/x86_64 -I/Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/DerivedSources -include /var/folders/qI/qIvG5JtsGO8+iazy0mbMWE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/toptabs_Prefix-enbmeidhzdeiizfvkajlpaejbgry/toptabs_Prefix.pch -c /Users/alexgordon/toptabs/Classes/TBPopupButton.m -o /Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/Objects-normal/x86_64/TBPopupButton.o0#
-
-CCompileC build/toptabs.build/Debug/toptabs.build/Objects-normal/x86_64/TBPreviewController.o /Users/alexgordon/toptabs/Classes/TBPreviewController.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s297895729.512253
-e297895729.550100
-r0
-xCompileC
-xbuild/toptabs.build/Debug/toptabs.build/Objects-normal/x86_64/TBPreviewController.o
-x/Users/alexgordon/toptabs/Classes/TBPreviewController.m
-xnormal
-xx86_64
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-oIn file included from /Users/alexgordon/toptabs/Classes/TBPreviewController.m:11:
-o/Users/alexgordon/toptabs/Classes/TBTabContentsPreviewView.h:17:1: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed
-o @property (setter=setImage:) NSImage *image;
-o ^
-o/Users/alexgordon/toptabs/Classes/TBTabContentsPreviewView.h:17:1: warning: default property attribute 'assign' not appropriate for non-gc object
-o/Users/alexgordon/toptabs/Classes/TBPreviewController.m:14:9: fatal error: 'CHTabController.h' file not found
-o #import "CHTabController.h"
-o         ^
-o3 diagnostics generated.
-lSLF07#2@63"Compile /Users/alexgordon/toptabs/Classes/TBPreviewController.m297895729#297895729#0(581"In file included from /Users/alexgordon/toptabs/Classes/TBPreviewController.m:11:/Users/alexgordon/toptabs/Classes/TBTabContentsPreviewView.h:17:1: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed @property (setter=setImage:) NSImage *image; ^/Users/alexgordon/toptabs/Classes/TBTabContentsPreviewView.h:17:1: warning: default property attribute 'assign' not appropriate for non-gc object/Users/alexgordon/toptabs/Classes/TBPreviewController.m:14:9: fatal error: 'CHTabController.h' file not found #import "CHTabController.h"         ^3(22@77"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed297895729#82#154#2(7@81"In file included from /Users/alexgordon/toptabs/Classes/TBPreviewController.m:11:297895729#0#82#0(6@55"/Users/alexgordon/toptabs/Classes/TBPreviewController.m281062831#11#0#11#0#0"0(13@141"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed in /Users/alexgordon/toptabs/Classes/TBTabContentsPreviewView.h297895729#18446744073709551615#0#0(6@60"/Users/alexgordon/toptabs/Classes/TBTabContentsPreviewView.h268872140#17#1#0#0#0"0(6@60"/Users/alexgordon/toptabs/Classes/TBTabContentsPreviewView.h268872140#17#1#0#0#77"no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed0(22@69"Default property attribute 'assign' not appropriate for non-gc object297895729#285#146#2(7@81"In file included from /Users/alexgordon/toptabs/Classes/TBPreviewController.m:11:297895729#18446744073709551615#0#0(6@55"/Users/alexgordon/toptabs/Classes/TBPreviewController.m281062831#11#0#11#0#0"0(13@133"Default property attribute 'assign' not appropriate for non-gc object in /Users/alexgordon/toptabs/Classes/TBTabContentsPreviewView.h297895729#18446744073709551615#0#0(6@60"/Users/alexgordon/toptabs/Classes/TBTabContentsPreviewView.h268872140#17#1#0#0#0"0(6@60"/Users/alexgordon/toptabs/Classes/TBTabContentsPreviewView.h268872140#17#1#0#0#69"default property attribute 'assign' not appropriate for non-gc object0(4@34"'CHTabController.h' file not found297895729#431#110#0(6@55"/Users/alexgordon/toptabs/Classes/TBPreviewController.m281062831#14#9#0#0#18"'*' file not found0(0#0#55"/Users/alexgordon/toptabs/Classes/TBPreviewController.m4300911832#1390"    cd /Users/alexgordon/toptabs    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -iquote /Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/toptabs-generated-files.hmap -I/Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/toptabs-own-target-headers.hmap -I/Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/toptabs-all-target-headers.hmap -iquote /Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/toptabs-project-headers.hmap -F/Users/alexgordon/toptabs/build/Debug -I/Users/alexgordon/toptabs/build/Debug/include -I/Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/DerivedSources/x86_64 -I/Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/DerivedSources -include /var/folders/qI/qIvG5JtsGO8+iazy0mbMWE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/toptabs_Prefix-enbmeidhzdeiizfvkajlpaejbgry/toptabs_Prefix.pch -c /Users/alexgordon/toptabs/Classes/TBPreviewController.m -o /Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/Objects-normal/x86_64/TBPreviewController.o1#
-
-CCompileC build/toptabs.build/Debug/toptabs.build/Objects-normal/x86_64/TBPreviewWindow.o /Users/alexgordon/toptabs/Classes/TBPreviewWindow.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s297895729.544292
-e297895729.629846
-r1
-xCompileC
-xbuild/toptabs.build/Debug/toptabs.build/Objects-normal/x86_64/TBPreviewWindow.o
-x/Users/alexgordon/toptabs/Classes/TBPreviewWindow.m
-xnormal
-xx86_64
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-o/Users/alexgordon/toptabs/Classes/TBPreviewWindow.m:15:41: warning: conflicting parameter types in implementation of 'initWithContentRect:styleMask:backing:defer:': 'NSUInteger' (aka 'unsigned long') vs 'unsigned int'
-o                 styleMask:(unsigned int)aStyle 
-o                                         ^
-oIn file included from /Users/alexgordon/toptabs/toptabs_Prefix.pch:6:
-oIn file included from /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h:13:
-oIn file included from /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.h:30:
-oIn file included from /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSFontPanel.h:8:
-oIn file included from /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSPanel.h:8:
-o/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSWindow.h:264:69: note: previous definition is here
-o - (id)initWithContentRect:(NSRect)contentRect styleMask:(NSUInteger)aStyle backing:(NSBackingStoreType)bufferingType defer:(BOOL)flag;
-o                                                                     ^
-o2 diagnostics generated.
-lSLF07#2@59"Compile /Users/alexgordon/toptabs/Classes/TBPreviewWindow.m297895729#297895729#0(1192"/Users/alexgordon/toptabs/Classes/TBPreviewWindow.m:15:41: warning: conflicting parameter types in implementation of 'initWithContentRect:styleMask:backing:defer:': 'NSUInteger' (aka 'unsigned long') vs 'unsigned int'                 styleMask:(unsigned int)aStyle                                          ^In file included from /Users/alexgordon/toptabs/toptabs_Prefix.pch:6:In file included from /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h:13:In file included from /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.h:30:In file included from /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSFontPanel.h:8:In file included from /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSPanel.h:8:/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSWindow.h:264:69: note: previous definition is here - (id)initWithContentRect:(NSRect)contentRect styleMask:(NSUInteger)aStyle backing:(NSBackingStoreType)bufferingType defer:(BOOL)flag;                                                                     ^1(22@149"Conflicting parameter types in implementation of 'initWithContentRect:styleMask:backing:defer:': 'NSUInteger' (aka 'unsigned long') vs 'unsigned int'297895729#0#218#1(13@27"Previous definition is here297895729#850#135#6(7@116"In file included from /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSPanel.h:8:297895729#733#117#0(6@91"/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSPanel.h284476136#8#0#8#0#0"0(7@120"In file included from /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSFontPanel.h:8:297895729#612#121#0(6@95"/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSFontPanel.h284476135#8#0#8#0#0"0(7@116"In file included from /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.h:30:297895729#495#117#0(6@90"/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.h284476135#30#0#30#0#0"0(7@114"In file included from /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h:13:297895729#380#115#0(6@88"/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h108323304#13#0#13#0#0"0(7@69"In file included from /Users/alexgordon/toptabs/toptabs_Prefix.pch:6:297895729#310#70#0(6@44"/Users/alexgordon/toptabs/toptabs_Prefix.pch297895138#6#0#6#0#0"0(13@123"Previous definition is here in /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSWindow.h297895729#18446744073709551615#0#0(6@92"/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSWindow.h284476136#264#69#0#0#0"0(6@92"/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSWindow.h284476136#264#69#0#0#27"previous definition is here0(6@51"/Users/alexgordon/toptabs/Classes/TBPreviewWindow.m268872140#15#41#0#0#58"conflicting parameter types in implementation of *: * vs *0(0#0#51"/Users/alexgordon/toptabs/Classes/TBPreviewWindow.m4300911832#1382"    cd /Users/alexgordon/toptabs    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -iquote /Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/toptabs-generated-files.hmap -I/Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/toptabs-own-target-headers.hmap -I/Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/toptabs-all-target-headers.hmap -iquote /Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/toptabs-project-headers.hmap -F/Users/alexgordon/toptabs/build/Debug -I/Users/alexgordon/toptabs/build/Debug/include -I/Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/DerivedSources/x86_64 -I/Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/DerivedSources -include /var/folders/qI/qIvG5JtsGO8+iazy0mbMWE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/toptabs_Prefix-enbmeidhzdeiizfvkajlpaejbgry/toptabs_Prefix.pch -c /Users/alexgordon/toptabs/Classes/TBPreviewWindow.m -o /Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/Objects-normal/x86_64/TBPreviewWindow.o0#
-
-CCompileC build/toptabs.build/Debug/toptabs.build/Objects-normal/x86_64/TBTabContentsPreviewView.o /Users/alexgordon/toptabs/Classes/TBTabContentsPreviewView.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s297895729.550201
-e297895729.731683
-r1
-xCompileC
-xbuild/toptabs.build/Debug/toptabs.build/Objects-normal/x86_64/TBTabContentsPreviewView.o
-x/Users/alexgordon/toptabs/Classes/TBTabContentsPreviewView.m
-xnormal
-xx86_64
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-oIn file included from /Users/alexgordon/toptabs/Classes/TBTabContentsPreviewView.m:9:
-o/Users/alexgordon/toptabs/Classes/TBTabContentsPreviewView.h:17:1: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed
-o @property (setter=setImage:) NSImage *image;
-o ^
-o/Users/alexgordon/toptabs/Classes/TBTabContentsPreviewView.h:17:1: warning: default property attribute 'assign' not appropriate for non-gc object
-o2 diagnostics generated.
-lSLF07#2@68"Compile /Users/alexgordon/toptabs/Classes/TBTabContentsPreviewView.m297895729#297895729#0(435"In file included from /Users/alexgordon/toptabs/Classes/TBTabContentsPreviewView.m:9:/Users/alexgordon/toptabs/Classes/TBTabContentsPreviewView.h:17:1: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed @property (setter=setImage:) NSImage *image; ^/Users/alexgordon/toptabs/Classes/TBTabContentsPreviewView.h:17:1: warning: default property attribute 'assign' not appropriate for non-gc object2(22@77"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed297895729#86#154#2(7@85"In file included from /Users/alexgordon/toptabs/Classes/TBTabContentsPreviewView.m:9:297895729#0#86#0(6@60"/Users/alexgordon/toptabs/Classes/TBTabContentsPreviewView.m280110721#9#0#9#0#0"0(13@141"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed in /Users/alexgordon/toptabs/Classes/TBTabContentsPreviewView.h297895729#18446744073709551615#0#0(6@60"/Users/alexgordon/toptabs/Classes/TBTabContentsPreviewView.h268872140#17#1#0#0#0"0(6@60"/Users/alexgordon/toptabs/Classes/TBTabContentsPreviewView.h268872140#17#1#0#0#77"no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed0(22@69"Default property attribute 'assign' not appropriate for non-gc object297895729#289#146#2(7@85"In file included from /Users/alexgordon/toptabs/Classes/TBTabContentsPreviewView.m:9:297895729#18446744073709551615#0#0(6@60"/Users/alexgordon/toptabs/Classes/TBTabContentsPreviewView.m280110721#9#0#9#0#0"0(13@133"Default property attribute 'assign' not appropriate for non-gc object in /Users/alexgordon/toptabs/Classes/TBTabContentsPreviewView.h297895729#18446744073709551615#0#0(6@60"/Users/alexgordon/toptabs/Classes/TBTabContentsPreviewView.h268872140#17#1#0#0#0"0(6@60"/Users/alexgordon/toptabs/Classes/TBTabContentsPreviewView.h268872140#17#1#0#0#69"default property attribute 'assign' not appropriate for non-gc object0(0#0#60"/Users/alexgordon/toptabs/Classes/TBTabContentsPreviewView.m4300911832#1400"    cd /Users/alexgordon/toptabs    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -iquote /Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/toptabs-generated-files.hmap -I/Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/toptabs-own-target-headers.hmap -I/Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/toptabs-all-target-headers.hmap -iquote /Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/toptabs-project-headers.hmap -F/Users/alexgordon/toptabs/build/Debug -I/Users/alexgordon/toptabs/build/Debug/include -I/Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/DerivedSources/x86_64 -I/Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/DerivedSources -include /var/folders/qI/qIvG5JtsGO8+iazy0mbMWE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/toptabs_Prefix-enbmeidhzdeiizfvkajlpaejbgry/toptabs_Prefix.pch -c /Users/alexgordon/toptabs/Classes/TBTabContentsPreviewView.m -o /Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/Objects-normal/x86_64/TBTabContentsPreviewView.o0#
-
-CCompileC build/toptabs.build/Debug/toptabs.build/Objects-normal/x86_64/TBTabItemIdentifier.o /Users/alexgordon/toptabs/Classes/TBTabItemIdentifier.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s297895729.629944
-e297895729.761835
-r1
-xCompileC
-xbuild/toptabs.build/Debug/toptabs.build/Objects-normal/x86_64/TBTabItemIdentifier.o
-x/Users/alexgordon/toptabs/Classes/TBTabItemIdentifier.m
-xnormal
-xx86_64
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-o/Users/alexgordon/toptabs/Classes/TBTabItemIdentifier.m:37:2:{37:2-37:33}: warning: method '-displayEverything' not found (return type defaults to 'id')
-o         [self.tabBar displayEverything];
-o         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-o/Users/alexgordon/toptabs/Classes/TBTabItemIdentifier.m:56:2:{56:2-56:63}: warning: method '-hideIfItem:' not found (return type defaults to 'id')
-o         [[TBPreviewController sharedController] hideIfItem:self.item];
-o         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-o/Users/alexgordon/toptabs/Classes/TBTabItemIdentifier.m:60:3:{60:3-60:73}: warning: method '-documentDidSwitchFromView:toView:' not found (return type defaults to 'id')
-o                 [tabBar.document documentDidSwitchFromView:[self itemview] toView:nil];
-o                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-o/Users/alexgordon/toptabs/Classes/TBTabItemIdentifier.m:62:3:{62:3-62:101}: warning: method '-documentDidSwitchFromView:toView:' not found (return type defaults to 'id')
-o                 [tabBar.document documentDidSwitchFromView:nil toView:[[tabBar.tabView selectedTabViewItem] view]];
-o                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-o/Users/alexgordon/toptabs/Classes/TBTabItemIdentifier.m:65:3:{65:3-65:34}: warning: method '-displayEverything' not found (return type defaults to 'id')
-o                 [self.tabBar displayEverything];
-o                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-o/Users/alexgordon/toptabs/Classes/TBTabItemIdentifier.m:70:2:{70:2-70:47}: warning: method '-createNewViewForIdentifier:' not found (return type defaults to 'id')
-o         [self.tabBar createNewViewForIdentifier:self];
-o         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-o/Users/alexgordon/toptabs/Classes/TBTabItemIdentifier.m:71:2:{71:2-71:39}: warning: method '-beginIgnoringAnimations' not found (return type defaults to 'id')
-o         [self.tabBar beginIgnoringAnimations];
-o         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-o/Users/alexgordon/toptabs/Classes/TBTabItemIdentifier.m:73:2:{73:2-73:37}: warning: method '-endIgnoringAnimations' not found (return type defaults to 'id')
-o         [self.tabBar endIgnoringAnimations];
-o         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-o/Users/alexgordon/toptabs/Classes/TBTabItemIdentifier.m:81:2:{81:2-81:47}: warning: method '-createNewViewForIdentifier:' not found (return type defaults to 'id')
-o         [self.tabBar createNewViewForIdentifier:self];
-o         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-o/Users/alexgordon/toptabs/Classes/TBTabItemIdentifier.m:88:2:{88:2-88:33}: warning: method '-displayEverything' not found (return type defaults to 'id')
-o         [self.tabBar displayEverything];
-o         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-o/Users/alexgordon/toptabs/Classes/TBTabItemIdentifier.m:97:2:{97:2-97:33}: warning: method '-displayEverything' not found (return type defaults to 'id')
-o         [self.tabBar displayEverything];
-o         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-o11 diagnostics generated.
-lSLF07#2@63"Compile /Users/alexgordon/toptabs/Classes/TBTabItemIdentifier.m297895729#297895729#0(3049"/Users/alexgordon/toptabs/Classes/TBTabItemIdentifier.m:37:2:{37:2-37:33}: warning: method '-displayEverything' not found (return type defaults to 'id')         [self.tabBar displayEverything];         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~/Users/alexgordon/toptabs/Classes/TBTabItemIdentifier.m:56:2:{56:2-56:63}: warning: method '-hideIfItem:' not found (return type defaults to 'id')         [[TBPreviewController sharedController] hideIfItem:self.item];         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~/Users/alexgordon/toptabs/Classes/TBTabItemIdentifier.m:60:3:{60:3-60:73}: warning: method '-documentDidSwitchFromView:toView:' not found (return type defaults to 'id')                 [tabBar.document documentDidSwitchFromView:[self itemview] toView:nil];                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~/Users/alexgordon/toptabs/Classes/TBTabItemIdentifier.m:62:3:{62:3-62:101}: warning: method '-documentDidSwitchFromView:toView:' not found (return type defaults to 'id')                 [tabBar.document documentDidSwitchFromView:nil toView:[[tabBar.tabView selectedTabViewItem] view]];                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~/Users/alexgordon/toptabs/Classes/TBTabItemIdentifier.m:65:3:{65:3-65:34}: warning: method '-displayEverything' not found (return type defaults to 'id')                 [self.tabBar displayEverything];                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~/Users/alexgordon/toptabs/Classes/TBTabItemIdentifier.m:70:2:{70:2-70:47}: warning: method '-createNewViewForIdentifier:' not found (return type defaults to 'id')         [self.tabBar createNewViewForIdentifier:self];         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~/Users/alexgordon/toptabs/Classes/TBTabItemIdentifier.m:71:2:{71:2-71:39}: warning: method '-beginIgnoringAnimations' not found (return type defaults to 'id')         [self.tabBar beginIgnoringAnimations];         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~/Users/alexgordon/toptabs/Classes/TBTabItemIdentifier.m:73:2:{73:2-73:37}: warning: method '-endIgnoringAnimations' not found (return type defaults to 'id')         [self.tabBar endIgnoringAnimations];         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~/Users/alexgordon/toptabs/Classes/TBTabItemIdentifier.m:81:2:{81:2-81:47}: warning: method '-createNewViewForIdentifier:' not found (return type defaults to 'id')         [self.tabBar createNewViewForIdentifier:self];         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~/Users/alexgordon/toptabs/Classes/TBTabItemIdentifier.m:88:2:{88:2-88:33}: warning: method '-displayEverything' not found (return type defaults to 'id')         [self.tabBar displayEverything];         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~/Users/alexgordon/toptabs/Classes/TBTabItemIdentifier.m:97:2:{97:2-97:33}: warning: method '-displayEverything' not found (return type defaults to 'id')         [self.tabBar displayEverything];         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~11(22@68"Method '-displayEverything' not found (return type defaults to 'id')297895729#0#153#0(6@55"/Users/alexgordon/toptabs/Classes/TBTabItemIdentifier.m297895728#37#2#0#0#49"method * not found (return type defaults to 'id')1(6@55"/Users/alexgordon/toptabs/Classes/TBTabItemIdentifier.m297895728#37#2#37#33#22@62"Method '-hideIfItem:' not found (return type defaults to 'id')297895729#236#147#0(6@55"/Users/alexgordon/toptabs/Classes/TBTabItemIdentifier.m297895728#56#2#0#0#49"method * not found (return type defaults to 'id')1(6@55"/Users/alexgordon/toptabs/Classes/TBTabItemIdentifier.m297895728#56#2#56#63#22@84"Method '-documentDidSwitchFromView:toView:' not found (return type defaults to 'id')297895729#526#169#0(6@55"/Users/alexgordon/toptabs/Classes/TBTabItemIdentifier.m297895728#60#3#0#0#49"method * not found (return type defaults to 'id')1(6@55"/Users/alexgordon/toptabs/Classes/TBTabItemIdentifier.m297895728#60#3#60#73#22@84"Method '-documentDidSwitchFromView:toView:' not found (return type defaults to 'id')297895729#872#170#0(6@55"/Users/alexgordon/toptabs/Classes/TBTabItemIdentifier.m297895728#62#3#0#0#49"method * not found (return type defaults to 'id')1(6@55"/Users/alexgordon/toptabs/Classes/TBTabItemIdentifier.m297895728#62#3#62#101#22@68"Method '-displayEverything' not found (return type defaults to 'id')297895729#1275#153#0(6@55"/Users/alexgordon/toptabs/Classes/TBTabItemIdentifier.m297895728#65#3#0#0#49"method * not found (return type defaults to 'id')1(6@55"/Users/alexgordon/toptabs/Classes/TBTabItemIdentifier.m297895728#65#3#65#34#22@78"Method '-createNewViewForIdentifier:' not found (return type defaults to 'id')297895729#1527#163#0(6@55"/Users/alexgordon/toptabs/Classes/TBTabItemIdentifier.m297895728#70#2#0#0#49"method * not found (return type defaults to 'id')1(6@55"/Users/alexgordon/toptabs/Classes/TBTabItemIdentifier.m297895728#70#2#70#47#22@74"Method '-beginIgnoringAnimations' not found (return type defaults to 'id')297895729#1801#159#0(6@55"/Users/alexgordon/toptabs/Classes/TBTabItemIdentifier.m297895728#71#2#0#0#49"method * not found (return type defaults to 'id')1(6@55"/Users/alexgordon/toptabs/Classes/TBTabItemIdentifier.m297895728#71#2#71#39#22@72"Method '-endIgnoringAnimations' not found (return type defaults to 'id')297895729#2055#157#0(6@55"/Users/alexgordon/toptabs/Classes/TBTabItemIdentifier.m297895728#73#2#0#0#49"method * not found (return type defaults to 'id')1(6@55"/Users/alexgordon/toptabs/Classes/TBTabItemIdentifier.m297895728#73#2#73#37#22@78"Method '-createNewViewForIdentifier:' not found (return type defaults to 'id')297895729#2303#163#0(6@55"/Users/alexgordon/toptabs/Classes/TBTabItemIdentifier.m297895728#81#2#0#0#49"method * not found (return type defaults to 'id')1(6@55"/Users/alexgordon/toptabs/Classes/TBTabItemIdentifier.m297895728#81#2#81#47#22@68"Method '-displayEverything' not found (return type defaults to 'id')297895729#2577#153#0(6@55"/Users/alexgordon/toptabs/Classes/TBTabItemIdentifier.m297895728#88#2#0#0#49"method * not found (return type defaults to 'id')1(6@55"/Users/alexgordon/toptabs/Classes/TBTabItemIdentifier.m297895728#88#2#88#33#22@68"Method '-displayEverything' not found (return type defaults to 'id')297895729#2813#153#0(6@55"/Users/alexgordon/toptabs/Classes/TBTabItemIdentifier.m297895728#97#2#0#0#49"method * not found (return type defaults to 'id')1(6@55"/Users/alexgordon/toptabs/Classes/TBTabItemIdentifier.m297895728#97#2#97#33#0#0#55"/Users/alexgordon/toptabs/Classes/TBTabItemIdentifier.m4300911832#1390"    cd /Users/alexgordon/toptabs    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -iquote /Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/toptabs-generated-files.hmap -I/Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/toptabs-own-target-headers.hmap -I/Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/toptabs-all-target-headers.hmap -iquote /Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/toptabs-project-headers.hmap -F/Users/alexgordon/toptabs/build/Debug -I/Users/alexgordon/toptabs/build/Debug/include -I/Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/DerivedSources/x86_64 -I/Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/DerivedSources -include /var/folders/qI/qIvG5JtsGO8+iazy0mbMWE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/toptabs_Prefix-enbmeidhzdeiizfvkajlpaejbgry/toptabs_Prefix.pch -c /Users/alexgordon/toptabs/Classes/TBTabItemIdentifier.m -o /Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/Objects-normal/x86_64/TBTabItemIdentifier.o0#
-
-CCompileC build/toptabs.build/Debug/toptabs.build/Objects-normal/x86_64/TBTabItemLayer.o /Users/alexgordon/toptabs/Classes/TBTabItemLayer.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s297895729.731782
-e297895729.811654
-r0
-xCompileC
-xbuild/toptabs.build/Debug/toptabs.build/Objects-normal/x86_64/TBTabItemLayer.o
-x/Users/alexgordon/toptabs/Classes/TBTabItemLayer.m
-xnormal
-xx86_64
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-o/Users/alexgordon/toptabs/Classes/TBTabItemLayer.m:11:9: fatal error: 'CHTabController.h' file not found
-o #import "CHTabController.h"
-o         ^
-o1 diagnostic generated.
-lSLF07#2@58"Compile /Users/alexgordon/toptabs/Classes/TBTabItemLayer.m297895729#297895729#0(145"/Users/alexgordon/toptabs/Classes/TBTabItemLayer.m:11:9: fatal error: 'CHTabController.h' file not found #import "CHTabController.h"         ^1(4@34"'CHTabController.h' file not found297895729#0#105#0(6@50"/Users/alexgordon/toptabs/Classes/TBTabItemLayer.m297895728#11#9#0#0#18"'*' file not found0(0#0#50"/Users/alexgordon/toptabs/Classes/TBTabItemLayer.m4300911832#1380"    cd /Users/alexgordon/toptabs    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -iquote /Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/toptabs-generated-files.hmap -I/Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/toptabs-own-target-headers.hmap -I/Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/toptabs-all-target-headers.hmap -iquote /Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/toptabs-project-headers.hmap -F/Users/alexgordon/toptabs/build/Debug -I/Users/alexgordon/toptabs/build/Debug/include -I/Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/DerivedSources/x86_64 -I/Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/DerivedSources -include /var/folders/qI/qIvG5JtsGO8+iazy0mbMWE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/toptabs_Prefix-enbmeidhzdeiizfvkajlpaejbgry/toptabs_Prefix.pch -c /Users/alexgordon/toptabs/Classes/TBTabItemLayer.m -o /Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/Objects-normal/x86_64/TBTabItemLayer.o1#
-
-CCompileC build/toptabs.build/Debug/toptabs.build/Objects-normal/x86_64/TBTabManager.o /Users/alexgordon/toptabs/Classes/TBTabManager.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s297895729.761928
-e297895729.788965
-r0
-xCompileC
-xbuild/toptabs.build/Debug/toptabs.build/Objects-normal/x86_64/TBTabManager.o
-x/Users/alexgordon/toptabs/Classes/TBTabManager.m
-xnormal
-xx86_64
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-o/Users/alexgordon/toptabs/Classes/TBTabManager.m:10:9: fatal error: 'CHTabController.h' file not found
-o #import "CHTabController.h"
-o         ^
-o1 diagnostic generated.
-lSLF07#2@56"Compile /Users/alexgordon/toptabs/Classes/TBTabManager.m297895729#297895729#0(143"/Users/alexgordon/toptabs/Classes/TBTabManager.m:10:9: fatal error: 'CHTabController.h' file not found #import "CHTabController.h"         ^1(4@34"'CHTabController.h' file not found297895729#0#103#0(6@48"/Users/alexgordon/toptabs/Classes/TBTabManager.m297895728#10#9#0#0#18"'*' file not found0(0#0#48"/Users/alexgordon/toptabs/Classes/TBTabManager.m4300911832#1376"    cd /Users/alexgordon/toptabs    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -iquote /Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/toptabs-generated-files.hmap -I/Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/toptabs-own-target-headers.hmap -I/Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/toptabs-all-target-headers.hmap -iquote /Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/toptabs-project-headers.hmap -F/Users/alexgordon/toptabs/build/Debug -I/Users/alexgordon/toptabs/build/Debug/include -I/Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/DerivedSources/x86_64 -I/Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/DerivedSources -include /var/folders/qI/qIvG5JtsGO8+iazy0mbMWE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/toptabs_Prefix-enbmeidhzdeiizfvkajlpaejbgry/toptabs_Prefix.pch -c /Users/alexgordon/toptabs/Classes/TBTabManager.m -o /Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/Objects-normal/x86_64/TBTabManager.o1#
-
-CCompileC build/toptabs.build/Debug/toptabs.build/Objects-normal/x86_64/TBView.o /Users/alexgordon/toptabs/Classes/TBView.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-r0
-
-CCompileC build/toptabs.build/Debug/toptabs.build/Objects-normal/x86_64/TBViewLayout.o /Users/alexgordon/toptabs/Classes/TBViewLayout.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-r0
-
-CCompileC build/toptabs.build/Debug/toptabs.build/Objects-normal/x86_64/TTBar.o /Users/alexgordon/toptabs/Classes/TTBar.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s297895729.789060
-e297895729.845637
-r0
-xCompileC
-xbuild/toptabs.build/Debug/toptabs.build/Objects-normal/x86_64/TTBar.o
-x/Users/alexgordon/toptabs/Classes/TTBar.m
-xnormal
-xx86_64
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-o/Users/alexgordon/toptabs/Classes/TTBar.m:11:9: fatal error: 'CHTabController.h' file not found
-o #import "CHTabController.h"
-o         ^
-o1 diagnostic generated.
-lSLF07#2@49"Compile /Users/alexgordon/toptabs/Classes/TTBar.m297895729#297895729#0(136"/Users/alexgordon/toptabs/Classes/TTBar.m:11:9: fatal error: 'CHTabController.h' file not found #import "CHTabController.h"         ^1(4@34"'CHTabController.h' file not found297895729#0#96#0(6@41"/Users/alexgordon/toptabs/Classes/TTBar.m297895728#11#9#0#0#18"'*' file not found0(0#0#41"/Users/alexgordon/toptabs/Classes/TTBar.m4300911832#1362"    cd /Users/alexgordon/toptabs    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -iquote /Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/toptabs-generated-files.hmap -I/Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/toptabs-own-target-headers.hmap -I/Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/toptabs-all-target-headers.hmap -iquote /Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/toptabs-project-headers.hmap -F/Users/alexgordon/toptabs/build/Debug -I/Users/alexgordon/toptabs/build/Debug/include -I/Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/DerivedSources/x86_64 -I/Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/DerivedSources -include /var/folders/qI/qIvG5JtsGO8+iazy0mbMWE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/toptabs_Prefix-enbmeidhzdeiizfvkajlpaejbgry/toptabs_Prefix.pch -c /Users/alexgordon/toptabs/Classes/TTBar.m -o /Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/Objects-normal/x86_64/TTBar.o1#
-
-CCompileC build/toptabs.build/Debug/toptabs.build/Objects-normal/x86_64/TTBarLayout.o /Users/alexgordon/toptabs/Classes/TTBarLayout.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s297895729.811744
-e297895729.851124
-r1
-xCompileC
-xbuild/toptabs.build/Debug/toptabs.build/Objects-normal/x86_64/TTBarLayout.o
-x/Users/alexgordon/toptabs/Classes/TTBarLayout.m
-xnormal
-xx86_64
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF07#2@55"Compile /Users/alexgordon/toptabs/Classes/TTBarLayout.m297895729#297895729#0(0"0(0#0#47"/Users/alexgordon/toptabs/Classes/TTBarLayout.m4300911832#1374"    cd /Users/alexgordon/toptabs    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -iquote /Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/toptabs-generated-files.hmap -I/Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/toptabs-own-target-headers.hmap -I/Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/toptabs-all-target-headers.hmap -iquote /Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/toptabs-project-headers.hmap -F/Users/alexgordon/toptabs/build/Debug -I/Users/alexgordon/toptabs/build/Debug/include -I/Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/DerivedSources/x86_64 -I/Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/DerivedSources -include /var/folders/qI/qIvG5JtsGO8+iazy0mbMWE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/toptabs_Prefix-enbmeidhzdeiizfvkajlpaejbgry/toptabs_Prefix.pch -c /Users/alexgordon/toptabs/Classes/TTBarLayout.m -o /Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/Objects-normal/x86_64/TTBarLayout.o0#
-
-CCompileC build/toptabs.build/Debug/toptabs.build/Objects-normal/x86_64/main.o /Users/alexgordon/toptabs/main.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s297895729.266953
-e297895729.363799
-r1
-xCompileC
-xbuild/toptabs.build/Debug/toptabs.build/Objects-normal/x86_64/main.o
-x/Users/alexgordon/toptabs/main.m
-xnormal
-xx86_64
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF07#2@40"Compile /Users/alexgordon/toptabs/main.m297895729#297895729#0(0"0(0#0#32"/Users/alexgordon/toptabs/main.m4300911832#1352"    cd /Users/alexgordon/toptabs    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -iquote /Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/toptabs-generated-files.hmap -I/Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/toptabs-own-target-headers.hmap -I/Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/toptabs-all-target-headers.hmap -iquote /Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/toptabs-project-headers.hmap -F/Users/alexgordon/toptabs/build/Debug -I/Users/alexgordon/toptabs/build/Debug/include -I/Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/DerivedSources/x86_64 -I/Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/DerivedSources -include /var/folders/qI/qIvG5JtsGO8+iazy0mbMWE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/toptabs_Prefix-enbmeidhzdeiizfvkajlpaejbgry/toptabs_Prefix.pch -c /Users/alexgordon/toptabs/main.m -o /Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/Objects-normal/x86_64/main.o0#
-
-CCompileC build/toptabs.build/Debug/toptabs.build/Objects-normal/x86_64/toptabsAppDelegate.o /Users/alexgordon/toptabs/Classes/toptabsAppDelegate.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s297895729.267864
-e297895729.316109
-r0
-xCompileC
-xbuild/toptabs.build/Debug/toptabs.build/Objects-normal/x86_64/toptabsAppDelegate.o
-x/Users/alexgordon/toptabs/Classes/toptabsAppDelegate.m
-xnormal
-xx86_64
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-oIn file included from /Users/alexgordon/toptabs/Classes/toptabsAppDelegate.m:10:
-o/Users/alexgordon/toptabs/Classes/toptabsAppDelegate.h:14:11: error: unknown type name 'TTBar'
-o         IBOutlet TTBar *tabBar;
-o                  ^
-o1 diagnostic generated.
-lSLF07#2@62"Compile /Users/alexgordon/toptabs/Classes/toptabsAppDelegate.m297895729#297895729#0(229"In file included from /Users/alexgordon/toptabs/Classes/toptabsAppDelegate.m:10:/Users/alexgordon/toptabs/Classes/toptabsAppDelegate.h:14:11: error: unknown type name 'TTBar'         IBOutlet TTBar *tabBar;                  ^1(4@25"Unknown type name 'TTBar'297895729#81#95#2(7@80"In file included from /Users/alexgordon/toptabs/Classes/toptabsAppDelegate.m:10:297895729#0#81#0(6@54"/Users/alexgordon/toptabs/Classes/toptabsAppDelegate.m297895138#10#0#10#0#0"0(13@83"Unknown type name 'TTBar' in /Users/alexgordon/toptabs/Classes/toptabsAppDelegate.h297895729#18446744073709551615#0#0(6@54"/Users/alexgordon/toptabs/Classes/toptabsAppDelegate.h297895556#14#11#0#0#0"0(6@54"/Users/alexgordon/toptabs/Classes/toptabsAppDelegate.h297895556#14#11#0#0#19"unknown type name *0(0#0#54"/Users/alexgordon/toptabs/Classes/toptabsAppDelegate.m4300911832#1388"    cd /Users/alexgordon/toptabs    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -iquote /Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/toptabs-generated-files.hmap -I/Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/toptabs-own-target-headers.hmap -I/Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/toptabs-all-target-headers.hmap -iquote /Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/toptabs-project-headers.hmap -F/Users/alexgordon/toptabs/build/Debug -I/Users/alexgordon/toptabs/build/Debug/include -I/Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/DerivedSources/x86_64 -I/Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/DerivedSources -include /var/folders/qI/qIvG5JtsGO8+iazy0mbMWE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/toptabs_Prefix-enbmeidhzdeiizfvkajlpaejbgry/toptabs_Prefix.pch -c /Users/alexgordon/toptabs/Classes/toptabsAppDelegate.m -o /Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/Objects-normal/x86_64/toptabsAppDelegate.o1#
-
-CCompileXIB /Users/alexgordon/toptabs/en.lproj/MainMenu.xib
-s297895729.852066
-e297895730.188017
-r1
-xCompileXIB
-x/Users/alexgordon/toptabs/en.lproj/MainMenu.xib
-lSLF07#2@32"CompileXIB en.lproj/MainMenu.xib297895729#297895730#0(0"0(0#0#47"/Users/alexgordon/toptabs/en.lproj/MainMenu.xib4300911832#278"    cd /Users/alexgordon/toptabs    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/alexgordon/toptabs/build/Debug/toptabs.app/Contents/Resources/en.lproj/MainMenu.nib /Users/alexgordon/toptabs/en.lproj/MainMenu.xib0#
-
-CCopyStringsFile /Users/alexgordon/toptabs/build/Debug/toptabs.app/Contents/Resources/en.lproj/InfoPlist.strings en.lproj/InfoPlist.strings
-s297895729.851221
-e297895730.149953
-r1
-xCopyStringsFile
-x/Users/alexgordon/toptabs/build/Debug/toptabs.app/Contents/Resources/en.lproj/InfoPlist.strings
-xen.lproj/InfoPlist.strings
-lSLF07#2@31"Copy en.lproj/InfoPlist.strings297895729#297895730#0(0"0(0#0#52"/Users/alexgordon/toptabs/en.lproj/InfoPlist.strings4300911832#329"    cd /Users/alexgordon/toptabs    setenv ICONV /usr/bin/iconv    /Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copystrings --validate --inputencoding utf-8 --outputencoding UTF-16 en.lproj/InfoPlist.strings --outdir /Users/alexgordon/toptabs/build/Debug/toptabs.app/Contents/Resources/en.lproj0#
-
-CCpResource build/Debug/toptabs.app/Contents/Resources/TBAddSplitHorizontal_Image.png Images/TBAddSplitHorizontal_Image.png
-s297895730.150832
-e297895730.156156
-r1
-xCpResource
-xbuild/Debug/toptabs.app/Contents/Resources/TBAddSplitHorizontal_Image.png
-xImages/TBAddSplitHorizontal_Image.png
-lSLF07#2@42"Copy Images/TBAddSplitHorizontal_Image.png297895730#297895730#0(0"0(0#0#63"/Users/alexgordon/toptabs/Images/TBAddSplitHorizontal_Image.png4300911832#314"    cd /Users/alexgordon/toptabs    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/alexgordon/toptabs/Images/TBAddSplitHorizontal_Image.png /Users/alexgordon/toptabs/build/Debug/toptabs.app/Contents/Resources0#
-
-CCpResource build/Debug/toptabs.app/Contents/Resources/TBAddSplitVertical_Image.png Images/TBAddSplitVertical_Image.png
-s297895730.151365
-e297895730.160599
-r1
-xCpResource
-xbuild/Debug/toptabs.app/Contents/Resources/TBAddSplitVertical_Image.png
-xImages/TBAddSplitVertical_Image.png
-lSLF07#2@40"Copy Images/TBAddSplitVertical_Image.png297895730#297895730#0(0"0(0#0#61"/Users/alexgordon/toptabs/Images/TBAddSplitVertical_Image.png4300911832#312"    cd /Users/alexgordon/toptabs    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/alexgordon/toptabs/Images/TBAddSplitVertical_Image.png /Users/alexgordon/toptabs/build/Debug/toptabs.app/Contents/Resources0#
-
-CCpResource build/Debug/toptabs.app/Contents/Resources/TBChevrons_Image.png Images/TBChevrons_Image.png
-s297895730.151858
-e297895730.161920
-r1
-xCpResource
-xbuild/Debug/toptabs.app/Contents/Resources/TBChevrons_Image.png
-xImages/TBChevrons_Image.png
-lSLF07#2@32"Copy Images/TBChevrons_Image.png297895730#297895730#0(0"0(0#0#53"/Users/alexgordon/toptabs/Images/TBChevrons_Image.png4300911832#304"    cd /Users/alexgordon/toptabs    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/alexgordon/toptabs/Images/TBChevrons_Image.png /Users/alexgordon/toptabs/build/Debug/toptabs.app/Contents/Resources0#
-
-CCpResource build/Debug/toptabs.app/Contents/Resources/TBCloseButtonDirty_Image.png Images/TBCloseButtonDirty_Image.png
-s297895730.152819
-e297895730.169796
-r1
-xCpResource
-xbuild/Debug/toptabs.app/Contents/Resources/TBCloseButtonDirty_Image.png
-xImages/TBCloseButtonDirty_Image.png
-lSLF07#2@40"Copy Images/TBCloseButtonDirty_Image.png297895730#297895730#0(0"0(0#0#61"/Users/alexgordon/toptabs/Images/TBCloseButtonDirty_Image.png4300911832#312"    cd /Users/alexgordon/toptabs    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/alexgordon/toptabs/Images/TBCloseButtonDirty_Image.png /Users/alexgordon/toptabs/build/Debug/toptabs.app/Contents/Resources0#
-
-CCpResource build/Debug/toptabs.app/Contents/Resources/TBCloseButton_Image.png Images/TBCloseButton_Image.png
-s297895730.152334
-e297895730.175634
-r1
-xCpResource
-xbuild/Debug/toptabs.app/Contents/Resources/TBCloseButton_Image.png
-xImages/TBCloseButton_Image.png
-lSLF07#2@35"Copy Images/TBCloseButton_Image.png297895730#297895730#0(0"0(0#0#56"/Users/alexgordon/toptabs/Images/TBCloseButton_Image.png4300911832#307"    cd /Users/alexgordon/toptabs    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/alexgordon/toptabs/Images/TBCloseButton_Image.png /Users/alexgordon/toptabs/build/Debug/toptabs.app/Contents/Resources0#
-
-CCpResource build/Debug/toptabs.app/Contents/Resources/TBPlusButton_Image.png Images/TBPlusButton_Image.png
-s297895730.153294
-e297895730.174046
-r1
-xCpResource
-xbuild/Debug/toptabs.app/Contents/Resources/TBPlusButton_Image.png
-xImages/TBPlusButton_Image.png
-lSLF07#2@34"Copy Images/TBPlusButton_Image.png297895730#297895730#0(0"0(0#0#55"/Users/alexgordon/toptabs/Images/TBPlusButton_Image.png4300911832#306"    cd /Users/alexgordon/toptabs    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/alexgordon/toptabs/Images/TBPlusButton_Image.png /Users/alexgordon/toptabs/build/Debug/toptabs.app/Contents/Resources0#
-
-CCpResource build/Debug/toptabs.app/Contents/Resources/TBSetSplitOrientationtHorizontal_Image.png Images/TBSetSplitOrientationtHorizontal_Image.png
-s297895730.153767
-e297895730.169513
-r1
-xCpResource
-xbuild/Debug/toptabs.app/Contents/Resources/TBSetSplitOrientationtHorizontal_Image.png
-xImages/TBSetSplitOrientationtHorizontal_Image.png
-lSLF07#2@54"Copy Images/TBSetSplitOrientationtHorizontal_Image.png297895730#297895730#0(0"0(0#0#75"/Users/alexgordon/toptabs/Images/TBSetSplitOrientationtHorizontal_Image.png4300911832#326"    cd /Users/alexgordon/toptabs    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/alexgordon/toptabs/Images/TBSetSplitOrientationtHorizontal_Image.png /Users/alexgordon/toptabs/build/Debug/toptabs.app/Contents/Resources0#
-
-CCpResource build/Debug/toptabs.app/Contents/Resources/TBSetSplitOrientationtVertical_Image.png Images/TBSetSplitOrientationtVertical_Image.png
-s297895730.154251
-e297895730.172947
-r1
-xCpResource
-xbuild/Debug/toptabs.app/Contents/Resources/TBSetSplitOrientationtVertical_Image.png
-xImages/TBSetSplitOrientationtVertical_Image.png
-lSLF07#2@52"Copy Images/TBSetSplitOrientationtVertical_Image.png297895730#297895730#0(0"0(0#0#73"/Users/alexgordon/toptabs/Images/TBSetSplitOrientationtVertical_Image.png4300911832#324"    cd /Users/alexgordon/toptabs    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/alexgordon/toptabs/Images/TBSetSplitOrientationtVertical_Image.png /Users/alexgordon/toptabs/build/Debug/toptabs.app/Contents/Resources0#
-
-CCpResource build/Debug/toptabs.app/Contents/Resources/en.lproj/Credits.rtf en.lproj/Credits.rtf
-s297895730.150166
-e297895730.158157
-r1
-xCpResource
-xbuild/Debug/toptabs.app/Contents/Resources/en.lproj/Credits.rtf
-xen.lproj/Credits.rtf
-lSLF07#2@25"Copy en.lproj/Credits.rtf297895730#297895730#0(0"0(0#0#46"/Users/alexgordon/toptabs/en.lproj/Credits.rtf4300911832#306"    cd /Users/alexgordon/toptabs    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/alexgordon/toptabs/en.lproj/Credits.rtf /Users/alexgordon/toptabs/build/Debug/toptabs.app/Contents/Resources/en.lproj0#
-
-CLd /Users/alexgordon/toptabs/build/Debug/toptabs.app/Contents/MacOS/toptabs normal x86_64
-r0
-
-CProcessInfoPlistFile /Users/alexgordon/toptabs/build/Debug/toptabs.app/Contents/Info.plist toptabs-Info.plist
-s297895728.600271
-e297895728.606450
-r1
-xProcessInfoPlistFile
-x/Users/alexgordon/toptabs/build/Debug/toptabs.app/Contents/Info.plist
-xtoptabs-Info.plist
-lSLF07#2@26"Process toptabs-Info.plist297895728#297895728#0(0"0(0#0#44"/Users/alexgordon/toptabs/toptabs-Info.plist18859025310417008#271"    cd /Users/alexgordon/toptabs    builtin-infoPlistUtility toptabs-Info.plist -genpkginfo /Users/alexgordon/toptabs/build/Debug/toptabs.app/Contents/PkgInfo -expandbuildsettings -platform macosx -o /Users/alexgordon/toptabs/build/Debug/toptabs.app/Contents/Info.plist0#
-
-CProcessPCH /var/folders/qI/qIvG5JtsGO8+iazy0mbMWE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/toptabs_Prefix-enbmeidhzdeiizfvkajlpaejbgry/toptabs_Prefix.pch.pth toptabs_Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s297895728.606629
-e297895729.266849
-r1
-xProcessPCH
-x/var/folders/qI/qIvG5JtsGO8+iazy0mbMWE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/toptabs_Prefix-enbmeidhzdeiizfvkajlpaejbgry/toptabs_Prefix.pch.pth
-xtoptabs_Prefix.pch
-xnormal
-xx86_64
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF07#2@29"Precompile toptabs_Prefix.pch297895728#297895729#0(0"0(0#0#44"/Users/alexgordon/toptabs/toptabs_Prefix.pch4300911832#1271"    cd /Users/alexgordon/toptabs    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c-header -arch x86_64 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -iquote /Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/toptabs-generated-files.hmap -I/Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/toptabs-own-target-headers.hmap -I/Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/toptabs-all-target-headers.hmap -iquote /Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/toptabs-project-headers.hmap -F/Users/alexgordon/toptabs/build/Debug -I/Users/alexgordon/toptabs/build/Debug/include -I/Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/DerivedSources/x86_64 -I/Users/alexgordon/toptabs/build/toptabs.build/Debug/toptabs.build/DerivedSources -c /Users/alexgordon/toptabs/toptabs_Prefix.pch -o /var/folders/qI/qIvG5JtsGO8+iazy0mbMWE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/toptabs_Prefix-enbmeidhzdeiizfvkajlpaejbgry/toptabs_Prefix.pch.pth0#
-
-CTouch /Users/alexgordon/toptabs/build/Debug/toptabs.app
-r0
-
