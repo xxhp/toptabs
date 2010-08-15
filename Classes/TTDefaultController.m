@@ -43,5 +43,9 @@
 {
 	
 }
+- (void)moveToBar:(TTBar *)bar
+{
+	NSLog(@"Move to bar %@", bar);
+}
 
 @end

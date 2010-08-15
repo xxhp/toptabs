@@ -21,7 +21,7 @@ static __inline__ int TBRandomIntBetween(int a, int b)
 }
 
 
-@interface TTBar : NSView
+@interface TTBar : NSButton
 {	
 	IBOutlet NSTabView *tabView;
 	IBOutlet TBButton *addButton;

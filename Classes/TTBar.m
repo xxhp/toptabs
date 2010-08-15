@@ -42,7 +42,7 @@ NSInteger TBSortTabItem(NSTabViewItem *item1, NSTabViewItem *item2, void *contex
     if (self) {
 		resettingOrdering = NO;
 		selectingView = nil;
-    }
+	}
     return self;
 }
 
@@ -154,8 +154,15 @@ NSInteger TBSortTabItem(NSTabViewItem *item1, NSTabViewItem *item2, void *contex
 
 - (void)drawRect:(NSRect)rect
 {
-	[[self class] drawBackgroundInRect:[self bounds] flipped:NO light:![[self window] isMainWindow] hover:NO];
+	//[[self class] drawBackgroundInRect:[self bounds] flipped:NO light:![[self window] isMainWindow] hover:NO];
 	
+	rect = [self bounds];
+	
+	//rect.origin.y = rect.size.height - 6;
+//	rect.size.height = 6;
+	[[NSImage imageNamed:@"tab_background"] drawInRect:rect fromRect:NSZeroRect operation:NSCompositeSourceOver fraction:1.0 respectFlipped:YES hints:nil];
+	
+	/*
 	NSColor *sideLineColor = [NSColor colorWithCalibratedWhite:0.525 alpha:1.0];
 	NSRect sideRect = NSMakeRect(0, 1, 1, rect.size.height - 1);
 	[sideLineColor set];
@@ -165,7 +172,7 @@ NSInteger TBSortTabItem(NSTabViewItem *item1, NSTabViewItem *item2, void *contex
 	{
 		sideRect = NSMakeRect(rect.size.width - 1, 1, 1, rect.size.height - 1);
 		NSRectFillUsingOperation(sideRect, NSCompositeSourceOver);
-	}
+	}*/
 	
 	if ([[self layer] layoutManager] != self)
 		[[self layer] setLayoutManager:self];
@@ -289,7 +296,7 @@ NSInteger TBSortTabItem(NSTabViewItem *item1, NSTabViewItem *item2, void *contex
 	NSObject<TTController> *ident = [self createItemAndView];
 	NSTabViewItem *item = [[NSTabViewItem alloc] initWithIdentifier:ident];
 	[item setView:[[TBBlankInfoView alloc] initWithFrame:NSMakeRect(0, 0, 10, 10)]];
-	[item setLabel:[NSString stringWithFormat:@"%d", lastCounter + 1]];
+	[item setLabel:[NSString stringWithFormat:@"Hello World!", lastCounter + 1]];
 	
 	lastCounter++;
 	
@@ -302,6 +309,8 @@ NSInteger TBSortTabItem(NSTabViewItem *item1, NSTabViewItem *item2, void *contex
 	[self layoutSublayersOfLayer:nil];
 	
 	[[self layer] setNeedsDisplay];
+	
+	[self resetZOrdering];
 	//[self resetItems];
 }
 
@@ -310,7 +319,7 @@ NSInteger TBSortTabItem(NSTabViewItem *item1, NSTabViewItem *item2, void *contex
 	NSObject<TTController> *ident = [[TTDefaultController alloc] init];
 	TBTabItemLayer *view = [[TBTabItemLayer alloc] init];
 	view.needsDisplayOnBoundsChange = YES;
-	view.frame = CGRectMake([self rightmostNonOverflowX], -[self bounds].size.height, 134, [self bounds].size.height);
+	view.frame = CGRectMake([self rightmostNonOverflowX], -[self bounds].size.height, 216, [self bounds].size.height);
 	ident.view = view;
 	view.ident = ident;
 	ident.tabBar = self;
@@ -319,6 +328,9 @@ NSInteger TBSortTabItem(NSTabViewItem *item1, NSTabViewItem *item2, void *contex
 	
 	[view setNeedsDisplay];
 	[[self layer] addSublayer:view];
+	
+	[self resetZOrdering];
+	
 	return ident;
 }
 
@@ -326,7 +338,7 @@ NSInteger TBSortTabItem(NSTabViewItem *item1, NSTabViewItem *item2, void *contex
 {
 	TBTabItemLayer *view = [[TBTabItemLayer alloc] init];
 	view.needsDisplayOnBoundsChange = YES;
-	view.frame = CGRectMake([self rightmostNonOverflowX], -[self bounds].size.height, 134, [self bounds].size.height); //.frame =
+	view.frame = CGRectMake([self rightmostNonOverflowX], -[self bounds].size.height, 216, [self bounds].size.height); //.frame =
 	ident.view = view;
 	view.ident = ident;
 	
@@ -392,17 +404,16 @@ NSInteger TBSortTabItem(NSTabViewItem *item1, NSTabViewItem *item2, void *contex
 
 - (TBTabItemLayer *)layerAtPoint:(NSPoint)p
 {
-	TBTabItemLayer *view = nil;
 	NSArray *sublayers = [[self layer] sublayers];
 	for (TBTabItemLayer *v in [sublayers reverseObjectEnumerator])
 	{
-		if (NSPointInRect(p, NSRectFromCGRect(v.frame)))
+		if ([v containsPoint:[v convertPoint:p fromLayer:[self layer]]])//NSPointInRect(p, NSRectFromCGRect(v.frame)))
 		{
-			view = v;
+			return v;
 		}
 	}
 	
-	return view;
+	return nil;
 }
 
 - (TBTabItemLayer *)sendEventToSublayers:(NSEvent *)e selector:(SEL)selector view:(TBTabItemLayer *)view
@@ -444,6 +455,8 @@ NSInteger TBSortTabItem(NSTabViewItem *item1, NSTabViewItem *item2, void *contex
 		[l setNeedsDisplay];
 	}
 }
+
+const float betweenTabBuffer = -19;
 
 - (void)draggingTab:(NSObject<TTController> *)ident
 {
@@ -491,31 +504,31 @@ NSInteger TBSortTabItem(NSTabViewItem *item1, NSTabViewItem *item2, void *contex
 						runningX = r.origin.x + r.size.width - 1;
 					}
 					else
-						runningX += w - 1;
+						runningX += w - 1 + betweenTabBuffer;
 					
 					d.view.frame = r;
 				}
 				else
-					runningX += w - 1;
+					runningX += w - 1 + betweenTabBuffer;
 			}
 			else if (runningX >= [ident.view frame].origin.x - [ident.view frame].size.width / 2.0)
 			{	
-				if ([d.view goingToX] != runningX + itemWidth - 1)
+				if ([d.view goingToX] != runningX + itemWidth - 1 + betweenTabBuffer)
 				{
-					[d.view setGoingToX:runningX + itemWidth - 1];
-					CGRect r = CGRectMake(runningX + itemWidth - 1, 0, [d.view frame].size.width, [d.view frame].size.height);
+					[d.view setGoingToX:runningX + itemWidth - 1 + betweenTabBuffer];
+					CGRect r = CGRectMake(runningX + itemWidth - 1 + betweenTabBuffer, 0, [d.view frame].size.width, [d.view frame].size.height);
 					if (r.origin.x + r.size.width > [self frame].size.width)
 					{
 						r.origin.x = [self frame].size.width;
-						runningX = r.origin.x + r.size.width - 1;
+						runningX = r.origin.x + r.size.width - 1 + betweenTabBuffer;
 					}
 					else
-						runningX += w - 1;
+						runningX += w - 1 + betweenTabBuffer;
 					
 					d.view.frame = r;
 				}
 				else
-					runningX += w - 1;
+					runningX += w - 1 + betweenTabBuffer;
 				
 				
 			}
@@ -527,6 +540,8 @@ NSInteger TBSortTabItem(NSTabViewItem *item1, NSTabViewItem *item2, void *contex
 	[self setNeedsDisplay:YES];
 	
 	[document ignoreTabCleanupsAndRefereshes:NO];
+	
+	[self resetZOrdering];
 }
 
 - (void)layoutSublayersOfLayer:(CALayer *)layer
@@ -557,15 +572,15 @@ NSInteger TBSortTabItem(NSTabViewItem *item1, NSTabViewItem *item2, void *contex
 					pos.x = [self frame].size.width + bufferSpaceWidth;
 				
 				if (firstSet)
-					runningX = [self frame].size.width + bufferSpaceWidth + view.frame.size.width - 1;
+					runningX = [self frame].size.width + bufferSpaceWidth + view.frame.size.width - 1 + betweenTabBuffer;
 				else
-					runningX += [view frame].size.width + bufferSpaceWidth - 1;
+					runningX += [view frame].size.width + bufferSpaceWidth - 1 + betweenTabBuffer;
 				
 				firstSet = NO;
 			}
 			else
 			{
-				runningX += [view frame].size.width - 1;
+				runningX += [view frame].size.width - 1 + betweenTabBuffer;
 			}
 			
 			if ([view goingToX] != pos.x)
@@ -610,9 +625,20 @@ NSInteger TBSortTabItem(NSTabViewItem *item1, NSTabViewItem *item2, void *contex
 //	[CATransaction commit];
 	
 	[self refreshOverflowMenuItems];
+	//[self resetZOrdering];
 }
 
 
+- (void)resetZOrdering
+{
+	NSArray *items = [tabView tabViewItems];
+	for (NSTabViewItem *item in [items reverseObjectEnumerator])
+	{
+		[self bringViewToFront:[[item identifier] view]];
+	}
+	
+	[self bringViewToFront:[[[tabView selectedTabViewItem] identifier] view]];
+}
 - (void)resetItems
 {
 	NSMutableArray *removemes = [NSMutableArray array];
@@ -685,22 +711,23 @@ NSInteger TBSortTabItem(NSTabViewItem *item1, NSTabViewItem *item2, void *contex
 					pos.x = [self frame].size.width;
 				
 				if (firstSet)
-					runningX = [self frame].size.width + view.frame.size.width - 1;
+					runningX = [self frame].size.width + view.frame.size.width - 1 + betweenTabBuffer;
 				else
-					runningX += [view frame].size.width - 1;
+					runningX += [view frame].size.width - 1 + betweenTabBuffer;
 				
 				firstSet = NO;
 				
 				//runningX = pos.x + view.frame.size.width - 1;
 			}
 			else
-				runningX += [view frame].size.width - 1;
+				runningX += [view frame].size.width - 1 + betweenTabBuffer;
 			
 			view.position = pos;
 		}
 	}
-		
-	[self bringViewToFront:[[[tabView selectedTabViewItem] identifier] view]];
+	
+	[self resetZOrdering];
+	//[self bringViewToFront:[[[tabView selectedTabViewItem] identifier] view]];
 }
 
 //This method orders the tabs by frame.origin.x
@@ -737,7 +764,7 @@ NSInteger TBSortTabItem(NSTabViewItem *item1, NSTabViewItem *item2, void *contex
 
 - (void)bringViewToFront:(TBTabItemLayer *)v
 {
-	[CATransaction flush];
+	//[CATransaction flush];
 	[CATransaction begin];
 	[CATransaction setValue:(id)kCFBooleanTrue
 					 forKey:kCATransactionDisableActions];
@@ -745,6 +772,7 @@ NSInteger TBSortTabItem(NSTabViewItem *item1, NSTabViewItem *item2, void *contex
 	//FADE
 	[v removeFromSuperlayer];
 	[[self layer] addSublayer:v];
+	//[[self layer] insertSublayer:v atIndex:[[[self layer] sublayers] count]];
 	
 	[CATransaction commit];
 }
@@ -765,6 +793,8 @@ NSInteger TBSortTabItem(NSTabViewItem *item1, NSTabViewItem *item2, void *contex
 	for (CALayer *l in [[self layer] sublayers]) {
 		[l setNeedsDisplay];
 	}
+	
+	[self resetZOrdering];
 	
 	[CATransaction commit];
 	
@@ -795,6 +825,8 @@ NSInteger TBSortTabItem(NSTabViewItem *item1, NSTabViewItem *item2, void *contex
 {
 	if (ignoreTabEvents)
 		return;
+		
+	[self resetZOrdering];
 	
 	if ([document respondsToSelector:@selector(tabView:didCloseTabViewItem:)])
 		[document tabView:aTabView didCloseTabViewItem:tabViewItem];

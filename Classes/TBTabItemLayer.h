@@ -30,6 +30,11 @@
 	int closeIconStatus; //0 = normal, -1 = hover, 1 = pressed
 	
 	BOOL inFilePathMenuMode;
+	
+	NSWindow *dragOutWindow;
+	NSPoint dragOriginalMouseDownPoint;
+	NSPoint dragOutWindowStartPoint;
+	NSPoint dragOutWindowCursorOffset;
 }
 
 - (void)setGoingToX:(float)f;
@@ -38,5 +43,7 @@
 - (NSRect)textRect;
 
 @property (assign) NSObject<TTController> *ident;
+
+- (void)drawTabBackgroundInRect:(NSRect)rect style:(NSString *)style;
 
 @end

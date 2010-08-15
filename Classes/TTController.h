@@ -38,5 +38,6 @@
 - (void)createNewTab;
 - (void)replaceCurrentTabWithItemAndMakeActive;
 - (void)makeActive;
+- (void)moveToBar:(TTBar *)bar;
 
 @end

@@ -57,8 +57,8 @@
 @optional
 
 - (BOOL)tabBar:(TTBar *)bar shouldAddItem:(TTItem *)item;
-- (void)tabBar:(TTBar *)bar willSelectItem:(TTItem *)item;
-- (void)tabBar:(TTBar *)bar didSelectItem:(TTItem *)item;
+- (void)tabBar:(TTBar *)bar willAddItem:(TTItem *)item;
+- (void)tabBar:(TTBar *)bar didAddItem:(TTItem *)item;
 
 - (BOOL)tabBar:(TTBar *)bar shouldSelectItem:(TTItem *)item;
 - (void)tabBar:(TTBar *)bar willSelectItem:(TTItem *)item;

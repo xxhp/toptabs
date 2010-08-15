@@ -46,58 +46,53 @@
 	
 	if (state == NSBackgroundTab)
 	{
-		attr = [NSDictionary dictionaryWithObjectsAndKeys:[NSColor blackColor], NSForegroundColorAttributeName, [NSFont systemFontOfSize:11], NSFontAttributeName, paraStyle, NSParagraphStyleAttributeName, nil];
-		shadowAttr = [NSDictionary dictionaryWithObjectsAndKeys:[NSColor colorWithCalibratedWhite:1.0 alpha:0.6], NSForegroundColorAttributeName, [NSFont systemFontOfSize:11], NSFontAttributeName, paraStyle, NSParagraphStyleAttributeName, nil];
+		attr = [NSDictionary dictionaryWithObjectsAndKeys:[NSColor colorWithCalibratedWhite:0.2 alpha:1.0], NSForegroundColorAttributeName, [NSFont boldSystemFontOfSize:11], NSFontAttributeName, paraStyle, NSParagraphStyleAttributeName, nil];
+		shadowAttr = [NSDictionary dictionaryWithObjectsAndKeys:[NSColor colorWithCalibratedWhite:1.0 alpha:0.5], NSForegroundColorAttributeName, [NSFont boldSystemFontOfSize:11], NSFontAttributeName, paraStyle, NSParagraphStyleAttributeName, nil];
 	}
 	else if (state == NSSelectedTab)
 	{
-		attr = [NSDictionary dictionaryWithObjectsAndKeys:[NSColor whiteColor], NSForegroundColorAttributeName, [NSFont systemFontOfSize:11], NSFontAttributeName, paraStyle, NSParagraphStyleAttributeName, nil];
-		shadowAttr = [NSDictionary dictionaryWithObjectsAndKeys:[NSColor colorWithCalibratedWhite:0.0 alpha:0.5], NSForegroundColorAttributeName, [NSFont systemFontOfSize:11], NSFontAttributeName, paraStyle, NSParagraphStyleAttributeName, nil];
+		attr = [NSDictionary dictionaryWithObjectsAndKeys:[NSColor colorWithCalibratedWhite:0.1 alpha:1.0], NSForegroundColorAttributeName, [NSFont boldSystemFontOfSize:11], NSFontAttributeName, paraStyle, NSParagraphStyleAttributeName, nil];
+		shadowAttr = [NSDictionary dictionaryWithObjectsAndKeys:[NSColor colorWithCalibratedWhite:1.0 alpha:1.0], NSForegroundColorAttributeName, [NSFont boldSystemFontOfSize:11], NSFontAttributeName, paraStyle, NSParagraphStyleAttributeName, nil];
 	
 		//attr = [NSDictionary dictionaryWithObjectsAndKeys:[NSColor colorWithCalibratedWhite:0.0 alpha:1.0], NSForegroundColorAttributeName, [NSFont systemFontOfSize:11], NSFontAttributeName, paraStyle, NSParagraphStyleAttributeName, nil];
 		//shadowAttr = [NSDictionary dictionaryWithObjectsAndKeys:[NSColor colorWithCalibratedWhite:1.0 alpha:0.5], NSForegroundColorAttributeName, [NSFont systemFontOfSize:11], NSFontAttributeName, paraStyle, NSParagraphStyleAttributeName, nil];
 		
 		if (![[ident.tabBar window] isMainWindow])
 		{
-			attr = [NSDictionary dictionaryWithObjectsAndKeys:[NSColor blackColor], NSForegroundColorAttributeName, [NSFont systemFontOfSize:11], NSFontAttributeName, paraStyle, NSParagraphStyleAttributeName, nil];
-			shadowAttr = [NSDictionary dictionaryWithObjectsAndKeys:[NSColor colorWithCalibratedWhite:1.0 alpha:0.6], NSForegroundColorAttributeName, [NSFont systemFontOfSize:11], NSFontAttributeName, paraStyle, NSParagraphStyleAttributeName, nil];
+			attr = [NSDictionary dictionaryWithObjectsAndKeys:[NSColor colorWithCalibratedWhite:0.1 alpha:1.0], NSForegroundColorAttributeName, [NSFont boldSystemFontOfSize:11], NSFontAttributeName, paraStyle, NSParagraphStyleAttributeName, nil];
+			shadowAttr = [NSDictionary dictionaryWithObjectsAndKeys:[NSColor colorWithCalibratedWhite:1.0 alpha:0.5], NSForegroundColorAttributeName, [NSFont boldSystemFontOfSize:11], NSFontAttributeName, paraStyle, NSParagraphStyleAttributeName, nil];
 		}
 	}
 	
 	return [NSArray arrayWithObjects:attr, shadowAttr, nil];
 }
 
-- (NSRect)textRect
+const CGFloat TTLeftPadding = 20;
+const CGFloat TTIconLeftMargin = 8;
+const CGFloat TTTextLeftMargin = 8;
+const CGFloat TTTextRightMargin = 8;
+
+- (NSImage *)closeImage
 {
-	NSTabState state = [ident.item tabState];
+	return [NSImage imageNamed:@"tab_close"];
+}
 
-	id attr, shadowAttr;
-
-	NSImage *closeIcon = [NSImage imageNamed:@"TBCloseButton_Image"];
-	NSPoint closeIconPoint = NSMakePoint(round(26/2 - closeIcon.size.width/2), round(NSRectFromCGRect(self.bounds).size.height/2.0 - [closeIcon size].height/2.0 -  1.0));
-	
-	NSRect rect = NSRectFromCGRect(self.bounds);
-	
+- (NSRect)textRect
+{	
 	NSArray *textAttributes = [self textAttributes];
-	attr = [textAttributes objectAtIndex:0];
-	
-	float iconOffset = 23;
-	float textPadding = 10;
-	float extraBit = 3;
-	
-	NSImage *icon = [ident icon];
-	if (icon == 0)
-		iconOffset = 0;
+	id attr = [textAttributes objectAtIndex:0];
 	
 	NSString *label = [ident.item label];
 	NSSize size = [label sizeWithAttributes:attr];
 	
-	//	NSPoint point = NSMakePoint((icon ? iconOffset + textPadding + textPadding : 18 + 1) + extraBit, rect.size.height/2 - size.height/2);
-	//	NSRect textDrawRect = NSMakeRect(point.x, point.y, width + 18 - (icon ? iconOffset + textPadding + extraBit + extraBit + extraBit: 18) - textPadding, size.height);
+	CGFloat iconX = [ident icon] ? TTIconLeftMargin + [[ident icon] size].width : 0.0;
 	
-	NSPoint point = NSMakePoint(iconOffset + textPadding - 3 + (icon ? [icon size].width : closeIconPoint.x + [closeIcon size].width), rect.size.height/2 - size.height/2);
-	NSRect textDrawRect = NSMakeRect(point.x, point.y, rect.size.width - iconOffset - (textPadding * 2) - (icon ? [icon size].width : closeIconPoint.x + [closeIcon size].width), size.height);
-	
+	NSRect textDrawRect;
+	textDrawRect.origin.x = TTLeftPadding + [[self closeImage] size].width + iconX + TTTextLeftMargin;
+	textDrawRect.origin.y = 10.0;
+	textDrawRect.size.width = [self bounds].size.width - textDrawRect.origin.x - TTTextRightMargin;
+	textDrawRect.size.height = size.height;
+		
 	return textDrawRect;
 }
 
@@ -116,6 +111,7 @@
 	return [super defaultActionForKey:event];
 }
 
+/*
 - (NSBezierPath *)backgroundPath
 {
 	//The approximate radius of the curve
@@ -157,14 +153,78 @@
 		
 	return path;
 }
+*/
+
+
+// Constants for inset and control points for tab shape.
+const CGFloat kInsetMultiplier = 2.0/3.0;
+const CGFloat kControlPoint1Multiplier = 1.0/3.0;
+const CGFloat kControlPoint2Multiplier = 3.0/8.0;
+
+- (NSBezierPath *)backgroundPath
+{
+  // Outset by 0.5 in order to draw on pixels rather than on borders (which
+  // would cause blurry pixels). Subtract 1px of height to compensate, otherwise
+  // clipping will occur.
+  NSRect rect = [self bounds];
+  
+  rect = NSInsetRect(rect, -0.5, -0.5);
+  rect.size.height -= 1.0;
+
+  NSPoint bottomLeft = NSMakePoint(NSMinX(rect), NSMinY(rect) + 2);
+  NSPoint bottomRight = NSMakePoint(NSMaxX(rect), NSMinY(rect) + 2);
+  NSPoint topRight =
+      NSMakePoint(NSMaxX(rect) - kInsetMultiplier * NSHeight(rect),
+                  NSMaxY(rect));
+  NSPoint topLeft =
+      NSMakePoint(NSMinX(rect)  + kInsetMultiplier * NSHeight(rect),
+                  NSMaxY(rect));
+
+  CGFloat baseControlPointOutset = NSHeight(rect) * kControlPoint1Multiplier;
+  CGFloat bottomControlPointInset = NSHeight(rect) * kControlPoint2Multiplier;
+
+  // Outset many of these values by 1 to cause the fill to bleed outside the
+  // clip area.
+  NSBezierPath* path = [NSBezierPath bezierPath];
+  [path moveToPoint:NSMakePoint(bottomLeft.x - 1, bottomLeft.y - 2)];
+  [path lineToPoint:NSMakePoint(bottomLeft.x - 1, bottomLeft.y)];
+  [path lineToPoint:bottomLeft];
+  [path curveToPoint:topLeft
+       controlPoint1:NSMakePoint(bottomLeft.x + baseControlPointOutset,
+                                 bottomLeft.y)
+       controlPoint2:NSMakePoint(topLeft.x - bottomControlPointInset,
+                                 topLeft.y)];
+  [path lineToPoint:topRight];
+  [path curveToPoint:bottomRight
+       controlPoint1:NSMakePoint(topRight.x + bottomControlPointInset,
+                                 topRight.y)
+       controlPoint2:NSMakePoint(bottomRight.x - baseControlPointOutset,
+                                 bottomRight.y)];
+  [path lineToPoint:NSMakePoint(bottomRight.x + 1, bottomRight.y)];
+  [path lineToPoint:NSMakePoint(bottomRight.x + 1, bottomRight.y - 2)];
+  return path;
+}
+- (BOOL)containsPoint:(CGPoint)p
+{
+	return [[self backgroundPath] containsPoint:p];
+}
+
+- (void)drawTabBackgroundInRect:(NSRect)rect style:(NSString *)style
+{
+	NSImage *startCap = [NSImage imageNamed:[NSString stringWithFormat:@"%@_end_left", style]];
+	NSImage *middle = [NSImage imageNamed:[NSString stringWithFormat:@"%@_middle", style]];
+	NSImage *endCap = [NSImage imageNamed:[NSString stringWithFormat:@"%@_end_right", style]];
+	
+	NSDrawThreePartImage(rect, startCap, middle, endCap, NO, NSCompositeSourceOver, 1.0, NO);
+}
 - (void)drawLayer:(CALayer *)theLayer inContext:(CGContextRef)theContext
-{	
+{
 	NSGraphicsContext *oldContext = [NSGraphicsContext currentContext];
 	[NSGraphicsContext setCurrentContext:[NSGraphicsContext graphicsContextWithGraphicsPort:theContext flipped:NO]];
 	
 	NSRect rect = NSRectFromCGRect(self.bounds);
 	NSTabState state = [ident.item tabState];
-	
+		
 	NSDictionary *attr = nil;
 	NSDictionary *shadowAttr = nil;
 	
@@ -177,17 +237,19 @@
 		attr = [NSDictionary dictionaryWithObjectsAndKeys:[NSColor blackColor], NSForegroundColorAttributeName, [NSFont systemFontOfSize:11], NSFontAttributeName, paraStyle, NSParagraphStyleAttributeName, nil];
 		shadowAttr = [NSDictionary dictionaryWithObjectsAndKeys:[NSColor colorWithCalibratedWhite:1.0 alpha:0.6], NSForegroundColorAttributeName, [NSFont systemFontOfSize:11], NSFontAttributeName, paraStyle, NSParagraphStyleAttributeName, nil];
 		
-		[TTBar drawBackgroundInRect:rect flipped:YES light:![[ident.tabBar window] isMainWindow] hover:backgroundStatus == -1];
+		//[TTBar drawBackgroundInRect:rect flipped:YES light:![[ident.tabBar window] isMainWindow] hover:backgroundStatus == -1];
+		
+		[self drawTabBackgroundInRect:rect style:@"tab_norm"];
 		
 		//NSBezierPath *backgroundPath = [self backgroundPath];
 		//[[NSColor redColor] set];
 		//[backgroundPath fill];
 		
-		NSRect sideLine = NSMakeRect(0, 0, 1, rect.size.height - 1);
-		NSRectFillUsingOperation(sideLine, NSCompositeSourceOver);
+		//NSRect sideLine = NSMakeRect(0, 0, 1, rect.size.height - 1);
+		//NSRectFillUsingOperation(sideLine, NSCompositeSourceOver);
 		
-		sideLine = NSMakeRect(rect.size.width - 1, 0, 1, rect.size.height - 1);
-		NSRectFillUsingOperation(sideLine, NSCompositeSourceOver);
+		//sideLine = NSMakeRect(rect.size.width - 1, 0, 1, rect.size.height - 1);
+		//NSRectFillUsingOperation(sideLine, NSCompositeSourceOver);
 	}
 	else if (state == NSPressedTab)
 	{
@@ -196,6 +258,7 @@
 	}
 	else if (state == NSSelectedTab)
 	{
+	/*
 		rect = NSRectFromCGRect(self.bounds);
 		attr = [NSDictionary dictionaryWithObjectsAndKeys:[NSColor whiteColor], NSForegroundColorAttributeName, [NSFont systemFontOfSize:11], NSFontAttributeName, paraStyle, NSParagraphStyleAttributeName, nil];
 		shadowAttr = [NSDictionary dictionaryWithObjectsAndKeys:[NSColor colorWithCalibratedWhite:0.0 alpha:0.5], NSForegroundColorAttributeName, [NSFont systemFontOfSize:11], NSFontAttributeName, paraStyle, NSParagraphStyleAttributeName, nil];
@@ -232,41 +295,28 @@
 		
 		sideLine = NSMakeRect(rect.size.width - 1, 0, 1, rect.size.height);
 		NSRectFillUsingOperation(sideLine, NSCompositeSourceOver);
+	*/
+		[self drawTabBackgroundInRect:rect style:@"tab_sel"];
 	}
 	
 	NSArray *textAttributes = [self textAttributes];
 	attr = [textAttributes objectAtIndex:0];
 	shadowAttr = [textAttributes objectAtIndex:1];
-
 	
 	float width = rect.size.width - 18;
 	
-	NSImage *closeIcon = [NSImage imageNamed:@"TBCloseButton_Image"];
-	if ([ident isDirty] && closeIconStatus == 0)
-	{
-		closeIcon = [NSImage imageNamed:@"TBCloseButtonDirty_Image"];
-	}
+	NSImage *closeIcon = [self closeImage];
 	
-	NSPoint closeIconPoint = NSMakePoint(round(26/2 - closeIcon.size.width/2), round(NSRectFromCGRect(self.bounds).size.height/2.0 - [closeIcon size].height/2.0 -  1.0));
+	NSPoint closeIconPoint = NSMakePoint(TTLeftPadding, 12);
 	
-	if ([[ident.item tabView] numberOfTabViewItems] > 1 && !(backgroundStatus == 0 && state == NSBackgroundTab))
+	if ([[ident.item tabView] numberOfTabViewItems] > 1)// && !(backgroundStatus == 0 && state == NSBackgroundTab))
 	{
 		[closeIcon compositeToPoint:closeIconPoint operation:NSCompositeSourceOver];
 		if (closeIconStatus == 1)
 			[closeIcon compositeToPoint:closeIconPoint operation:NSCompositeSourceOver];
 	}
 	
-	//26 pixels from origin.x to image.x
-	
-	
-	float iconOffset = 23;
-	float textPadding = 8;
-	float extraBit = 3;
-	
-	
 	NSImage *icon = [ident icon];
-	if (icon == 0)
-		iconOffset = 0;
 	
 	NSString *label = [ident.item label];
 	NSSize size = [label sizeWithAttributes:attr];
@@ -276,7 +326,7 @@
 //	NSPoint point = NSMakePoint((icon ? iconOffset + textPadding + textPadding : 18 + 1) + extraBit, rect.size.height/2 - size.height/2);
 //	NSRect textDrawRect = NSMakeRect(point.x, point.y, width + 18 - (icon ? iconOffset + textPadding + extraBit + extraBit + extraBit: 18) - textPadding, size.height);
 
-	NSPoint point = NSMakePoint(iconOffset + textPadding - 3 + (icon ? [icon size].width : closeIconPoint.x + [closeIcon size].width), rect.size.height/2 - size.height/2);
+	NSPoint point;// = NSMakePoint(iconOffset + textPadding - 3 + (icon ? [icon size].width : closeIconPoint.x + [closeIcon size].width), rect.size.height/2 - size.height/2);
 	NSRect textDrawRect = [self textRect]; //NSMakeRect(point.x, point.y, rect.size.width - iconOffset - (textPadding * 2) - (icon ? [icon size].width : closeIconPoint.x + [closeIcon size].width), size.height);
 
 	
@@ -290,7 +340,7 @@
 	if (icon)
 	{
 		NSSize iconSize = [icon size];
-		point = NSMakePoint(iconOffset, rect.size.height/2.0 - iconSize.height/2.0);
+		point = NSMakePoint(TTLeftPadding + [[self closeImage] size].width + TTIconLeftMargin, rect.size.height/2.0 - iconSize.height/2.0);
 		[icon compositeToPoint:point operation:NSCompositeSourceOver];
 	}
 	
@@ -320,8 +370,19 @@
 {	
 	inFilePathMenuMode = NO;
 	
-	NSPoint p = [e locationInWindow];	
-	if (NSPointInRect(p, NSMakeRect(3, 0, 20, self.frame.size.height)) && ([[ident.item tabView] numberOfTabViewItems] > 1 || [[ident.item view] isKindOfClass:[TBBlankInfoView class]] == NO))
+	NSPoint p = [e locationInWindow];
+	
+	NSView *tabBarView = [[self ident] tabBar];
+	NSPoint currentPoint = [[NSApp currentEvent] locationInWindow];
+	NSPoint screenPoint = [NSEvent mouseLocation];
+	CGPoint p2 = [tabBarView convertPoint:currentPoint fromView:nil];
+	CGPoint p3 = p2;
+	p3.y = [tabBarView frame].size.height - p3.y;
+	
+	dragOriginalMouseDownPoint.x = [e locationInWindow].x;
+	dragOriginalMouseDownPoint.y = p3.y;
+	
+	if (NSPointInRect(p, NSMakeRect(TTLeftPadding - 3, 0, 20, self.frame.size.height)) && ([[ident.item tabView] numberOfTabViewItems] > 1 || [[ident.item view] isKindOfClass:[TBBlankInfoView class]] == NO))
 	{
 		closeIconStatus = 1;
 		stopDragging = YES;
@@ -348,6 +409,27 @@
 
 - (void)sublayer_mouseDragged:(NSEvent *)e
 {
+	NSView *tabBarView = [[self ident] tabBar];
+	NSPoint currentPoint = [[NSApp currentEvent] locationInWindow];
+	NSPoint screenPoint = [NSEvent mouseLocation];
+	CGPoint p2 = [tabBarView convertPoint:currentPoint fromView:nil];
+	CGPoint p3 = p2;
+	p3.y = [tabBarView frame].size.height - p3.y;
+	
+	if (dragOutWindow)
+	{
+		NSPoint p = [e locationInWindow];
+		
+		NSPoint currentPoint2 = [NSEvent mouseLocation];
+		NSRect windowFrame = [dragOutWindow frame];
+		windowFrame.origin.x = currentPoint2.x + dragOutWindowCursorOffset.x;
+		windowFrame.origin.y = currentPoint2.y + dragOutWindowCursorOffset.y;
+		[dragOutWindow setFrame:windowFrame display:YES];
+		
+		if (!NSPointInRect(p3, NSRectFromCGRect([tabBarView bounds])))
+			return;
+	}
+	
 	if (inFilePathMenuMode)
 		return;
 	
@@ -358,33 +440,78 @@
 		{
 			draggingPoint = p;
 		}
-		else if (dragging)
+		else
 		{
-			CGPoint newOrigin = self.position;
-			newOrigin.x -= draggingPoint.x - p.x;
-			if (newOrigin.x < 0)
-				newOrigin.x = 0;
-			else if (newOrigin.x + self.frame.size.width > [ident.tabBar frame].size.width)
-				newOrigin.x = [ident.tabBar frame].size.width - self.frame.size.width;
-			
-			[CATransaction begin];
-			[CATransaction flush];
-			
-			[CATransaction setValue:(id)kCFBooleanTrue
-							 forKey:kCATransactionDisableActions];
-		 
-			self.position = newOrigin;
-			
-			[CATransaction commit];
-			
-			[self.ident.tabBar setNeedsDisplay:YES];
-			[self.ident.tabBar draggingTab:self.ident];
+			NSLog(@"p.y = %lf", p2.y);
+			if (p3.y < -40 && !dragOutWindow)
+			{
+				NSLog(@"Drag away");
+				
+				//Build up an image to put in the placeholder window
+				NSView *identView = [[ident item] view];
+				NSRect identViewFrame = [identView frame];
+				NSSize placeholderImageSize = NSMakeSize([[tabBarView superview] frame].size.width, [[tabBarView superview] frame].size.height + identViewFrame.size.height);
+				NSImage *placeholderImage = [[NSImage alloc] initWithSize:placeholderImageSize];
+				[placeholderImage lockFocus];
+				//There's three components
+				
+				// 1. The top bar background
+				[[NSImage imageNamed:@"tab_background"] drawInRect:NSMakeRect(0, identViewFrame.size.height, placeholderImageSize.width, [[tabBarView superview] frame].size.height) fromRect:NSZeroRect operation:NSCompositeSourceOver fraction:1.0];
+				
+				// 2. The tab itself
+				NSImage *tabPlaceholderImage = [[NSImage alloc] initWithSize:self.bounds.size];
+				[tabPlaceholderImage lockFocus];
+				[self drawLayer:self inContext:[[NSGraphicsContext currentContext] graphicsPort]];
+				[tabPlaceholderImage unlockFocus];
+				[tabPlaceholderImage drawAtPoint:NSMakePoint([tabBarView frame].origin.x + self.frame.origin.x, identViewFrame.size.height) fromRect:NSZeroRect operation:NSCompositeSourceOver fraction:1.0];
+				
+				// 3. The view
+				[[identView alphaImage] drawAtPoint:NSZeroPoint fromRect:NSZeroRect operation:NSCompositeSourceOver fraction:1.0];
+				
+				[placeholderImage unlockFocus];
+				
+				NSRect contentRect = NSMakeRect(screenPoint.x, screenPoint.y, placeholderImageSize.width, placeholderImageSize.height);
+				
+				dragOutWindow = [[NSWindow alloc] initWithContentRect:contentRect styleMask:NSBorderlessWindowMask backing:NSBackingStoreBuffered defer:YES];
+				dragOutWindowStartPoint = [[NSApp currentEvent] locationInWindow];
+				dragOutWindowCursorOffset = NSMakePoint(-[[tabBarView superview] convertPoint:currentPoint fromView:nil].x, - identViewFrame.size.height - dragOriginalMouseDownPoint.y);
+				
+				[dragOutWindow setOpaque:NO];
+				[dragOutWindow setBackgroundColor:[NSColor clearColor]];
+				[dragOutWindow setContentView:[placeholderImage imageViewValue]];
+				[dragOutWindow setHasShadow:YES];
+				[dragOutWindow orderFront:nil];
+				
+				self.opacity = 0.0;
+			}
+			else
+			{			
+				CGPoint newOrigin = self.position;
+				newOrigin.x -= draggingPoint.x - p.x;
+				if (newOrigin.x < 0)
+					newOrigin.x = 0;
+				else if (newOrigin.x + self.frame.size.width > [ident.tabBar frame].size.width)
+					newOrigin.x = [ident.tabBar frame].size.width - self.frame.size.width;
+				
+				[CATransaction begin];
+				[CATransaction flush];
+				
+				[CATransaction setValue:(id)kCFBooleanTrue
+								 forKey:kCATransactionDisableActions];
+			 
+				self.position = newOrigin;
+				
+				[CATransaction commit];
+				
+				[self.ident.tabBar setNeedsDisplay:YES];
+				[self.ident.tabBar draggingTab:self.ident];
+			}
 		}
 		dragging = YES;
 	}
 	else if ([[ident.item tabView] numberOfTabViewItems] > 1 || [[ident.item view] isKindOfClass:[TBBlankInfoView class]] == NO)
 	{
-		if (NSPointInRect(p, NSMakeRect(3, 0, 20, self.frame.size.height)))
+		if (NSPointInRect(p, NSMakeRect(TTLeftPadding - 3, 0, 20, self.frame.size.height)))
 		{
 			closeIconStatus = 1;
 		}
@@ -393,20 +520,57 @@
 		
 		[self setNeedsDisplay];
 	}
-	
-	
-	
 }
 
+- (TTBar *)barAtCursor
+{
+	for (NSWindow *window in [NSApp windows])
+	{
+		if (![window respondsToSelector:@selector(tabBar)])
+			continue;
+		
+		TTBar *bar = [window tabBar];
+		if (![bar isKindOfClass:[TTBar class]])
+			continue;
+		
+		NSPoint windowCursorCoords = [window mouseLocationOutsideOfEventStream];
+		NSPoint windowBarCoords = [bar convertPoint:windowCursorCoords fromView:nil];
+		
+		if (!NSPointInRect(windowBarCoords, [bar frame]))
+			continue;
+		
+		return bar;
+	}
+}
 - (void)sublayer_mouseUp:(NSEvent *)e
 {
 	if (inFilePathMenuMode)
 		return;
+		
+	NSView *tabBarView = [[self ident] tabBar];
+	NSPoint currentPoint = [[NSApp currentEvent] locationInWindow];
+	NSPoint screenPoint = [NSEvent mouseLocation];
+	CGPoint p2 = [tabBarView convertPoint:currentPoint fromView:nil];
+	CGPoint p3 = p2;
+	p3.y = [tabBarView frame].size.height - p3.y;
+	
+	if (!NSPointInRect(p3, NSRectFromCGRect([tabBarView bounds])) && [self barAtPoint:[NSEvent mouseLocation]] != self)
+	{
+		[ident moveToBar:[self barAtCursor]];
+	}
+	
+	self.opacity = 1.0;
+	
+	if (dragOutWindow)
+	{
+		[dragOutWindow close];
+		dragOutWindow = nil;
+	}
 	
 	NSPoint p = [e locationInWindow];
 	if (NSPointInRect(p, NSRectFromCGRect(self.bounds)) && !dragging && [[ident.item tabView] numberOfTabViewItems] > 1)
 	{
-		if (NSPointInRect(p, NSMakeRect(3, 0, 20, self.frame.size.height)))
+		if (NSPointInRect(p, NSMakeRect(TTLeftPadding - 3, 0, 20, self.frame.size.height)))
 		{
 			[ident closeTab];
 			closeIconStatus = 0;
